@@ -6,14 +6,102 @@
   <body>
   <div class="wrapper">
       <div class="header"><h1>Hoppr Webpage Layout</h1></div>
-    <div class="navigation"> Navigation Here </div>
+    <div class="navigation">
+      <a href="index.html"><button>Home</button></a>
+      <a href="descriptions.html"><button>Hop Descriptions</button></a>
+      <a href="recipe.html"><button>Recipies</button></a>
+      <a href="aboutus.html"><button>About Us</button></a>
+    </div>
     <div class="container">
       <div class="leftcolumn">
-        <h3>Maybe Hops</h3>
+        <h3>Pick Your Hop</h3>
         <div class="leftText">
-          <p>will write bla blaaaaaa bla bla bal bal abla kankdjwbefunwlned3dw</p>
-          <p>things vnjearnvj v envj fkjej vueurenvklsg  ev eurej fjers v jkekj ej acc</p>
-          <p>wionjlwenc  wuenfje rjk ejrfnjernf erngelrng erngkj erngkjner erng</p>
+          <form id="compareHops">
+            <fieldset>
+              <legend>Find Replacment Hop</legend>
+              <p class="hopPro">Hop Choice</p>
+              <select name="hopChoice" id="hopChoice">
+                <!-- <option value="will be array"></option> -->
+              </select>
+              <p class="hopPro">Hop Use</p>
+              <select name="hopUse" id="hopUse">
+                <option value="bittering">Bittering</option>
+                <option value="aroma">Aroma</option>
+                <option value="dryHop">Dry Hop</option>
+              </select>
+              <button id="hopButton" type="submit">Choose Hop</button>
+            </fieldset>
+          </form>
+          <form id="hopProfile">
+            <fieldset>
+              <legend>Search For Flavor Profile</legend>
+              <p class="hopPro">Citrus</p>
+              <select name="citrus" id="citrus">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <p class="hopPro">Floral</p>
+              <select name="floral" id="floral">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <p class="hopPro">Fruity</p>
+              <select name="fruity" id="fruity">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <p class="hopPro">Piney</p>
+              <select name="piney" id="piney">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <p class="hopPro">Spicy</p>
+              <select name="spicy" id="spicy">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+              <button id="findProfile" type="submit">Find Profile</button>
+            </fieldset>
         </div>
       </div>
       <div class="rightcolumn">
