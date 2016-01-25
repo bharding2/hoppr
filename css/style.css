@@ -58,6 +58,10 @@ h3{
 .leftText{
   padding: 2%;
 }
+/*form[textarea] {
+  border: 2px ridge #000105;
+  border-radius: 3px;
+}*/
 .rightcolumn {
   float: right;
   color: #333333;
