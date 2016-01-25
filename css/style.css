@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+ }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  background-color: #000105;
+}
+.wrapper {
+  margin: 0 auto;
+  width: 922px;
+}
+.container {
+  background: url(faux-1-2-col.gif);
+  margin-bottom: 5px;
+  overflow: auto;
+  width: 100%;
+}
+h1 {
+  display:inline-block;
+  background-color: #000105;
+  color: #a6d35d;
+  padding: .25% 4% .25% 1%;
+}
+.header {
+  width: 902px;
+  padding: 10px;
+  height: 100px;
+  margin: 10px 0px 5px 0px;
+  background: url(http://www.bonappetit.com/wp-content/uploads/2014/09/wet-hops.jpg);
+  background-size: 100%;
+}
+.navigation {
+  /*position: relative;*/
+  background-color: #d7c7ad;
+  color: #333333;
+  padding: 10px;
+  margin: 0px 0px 5px 0px;
+}
+  /*.navigation:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 1%;
+  left: 1%;
+  right: 1%;
+  bottom: 1%;
+  border: 2% solid #333333;
+  background-color: #d7c7ad;
+}*/
+.leftcolumn {
+  display: inline;
+  color: #333333;
+  margin:10px;
+  padding:0;
+  width: 195px;
+  float: left;
+  background-color: #d7c7ad;
+  border: solid 1px #a6d35d;
+}
+h3{
+  color: #000105;
+  background-color: #a6d35d;
+  border-bottom: 1.5px solid #000105;
+  padding-left: 2%;
+}
+.leftText{
+  padding: 2%;
+}
+.rightcolumn {
+  float: right;
+  color: #333333;
+  margin:10px;
+  padding:0;
+  width: 680px;
+  display: inline;
+  position: relative;
+  background-color: #a6d35d;
+}
+h2 {
+  margin-top: .25%;
+  display:inline-block;
+  background-color: #000105;
+  color: #a6d35d;
+  padding: .25% 4% .25% 1%;
+}
+.rightText{
+  padding: 1%;
+}
+.rightP{
+  margin:8px 0;
+}
+.rightUL{
+  margin:0 0 15px 0;
+  padding:0;
+  list-style-type:none;
+}
+.rightLI{
+  margin-right:15px;
+  display:inline;
+}
+.footer {
+  background-color: #d7c7ad;
+  width: 902px;
+  clear: both;
+  color: #333333;
+  margin: 0px 0px 10px 0px;
+  padding: 10px;
+}
+.clear {
+  clear: both;
+  background: none;
+ }
