@@ -1,3 +1,5 @@
+'use strict';
+
 function Grain (grainName, degLov, extractPot) {
   this.grainName = grainName;
   this.degLov = degLov;
@@ -73,6 +75,7 @@ Beer.prototype.calcABV = function(){
   var totalABV = (this.oGrav - this.fGrav) * 131;
   return totalABV;
 }
+
 Beer.prototype.renderRecipe = function(){
   var testSection = document.getElementById('recipeSection');
   var h3El = document.createElement('h3');
