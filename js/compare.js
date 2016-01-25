@@ -8,15 +8,37 @@ function hopComp(alphaAcid, citrus, fruity, piney, spicey, floral) {
   // allHops.push(this);
 }
 
-var A = new hopComp(13, 5, 7, 1, 4, 2);
-var B = new hopComp(6, 2, 4, 2, 8, 9);
-var C = new hopComp(9, 7, 1, 8, 5, 3);
-
-hopComp.prototype.findPercentage = function(){
-  Math.abs(Math.abs(A - B) - 68) / 68;
-  this.findPercentage();
+var protohop = {
+  alphaAcid: 16,
+  citrus: 1,
+  fruity: 4,
+  piney: 7,
+  spicey: 4,
+  floral: 4,
 }
 
-// function.prototype.compHops(){
-//
-// }
+var percentArray = [];
+
+for (var i = 0; i < allHops.length; i++) {
+
+var diffAlphaAcid = Math.abs(protohop.alphaAcid - allHops[i].alphaAcid);
+
+var diffCitrus = Math.abs(protohop.citrus - allHops[i].citrus);
+
+var diffFruity = Math.abs(protohop.fruity - allHops[i].fruity);
+
+var diffPiney = Math.abs(protohop.piney - allHops[i].piney);
+
+var diffSpicey = Math.abs(protohop.spicey - allHops[i].spicey);
+
+var diffFloral = Math.abs(protohop.floral - allHops[i].floral);
+
+var totalDiff = diffAlphaAcid + diffCitrus + diffFruity + diffPiney + diffSpicey + diffFloral;
+
+var percentDiff = ((68 - totalDiff) / 68).toFixed(2);
+
+percentArray.push(percentDiff);
+
+console.log(percentDiff);
+
+}
