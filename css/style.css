@@ -39,6 +39,13 @@ h1 {
   padding: 10px;
   margin: 0px 0px 5px 0px;
 }
+button {
+  border: 1.5px solid #000105;
+  background-color: #3a3a3a;
+  border-radius: 6px;
+  color: #f7ffea;
+  padding: 1.5px 2px 1.5px 3px;
+}
 .leftcolumn {
   display: inline;
   color: #333333;
@@ -49,19 +56,27 @@ h1 {
   background-color: #d7c7ad;
   border: solid 1px #a6d35d;
 }
-h3{
+h3 {
   color: #000105;
   background-color: #a6d35d;
   border-bottom: 1.5px solid #000105;
   padding-left: 2%;
 }
-.leftText{
+.leftText {
   padding: 2%;
 }
-/*form[textarea] {
-  border: 2px ridge #000105;
+fieldset {
+  border: 2px solid #000105;
   border-radius: 3px;
-}*/
+  margin: 1%;
+  line-height: 18px;
+  color: #0d0d0e;
+  padding: 1%;
+}
+legend {
+  font-weight: bold;
+  font-size: 14px;
+}
 .rightcolumn {
   float: right;
   color: #333333;
@@ -79,18 +94,18 @@ h2 {
   color: #a6d35d;
   padding: .25% 4% .25% 1%;
 }
-.rightText{
+.rightText {
   padding: 1%;
 }
-.rightP{
+.rightP {
   margin:8px 0;
 }
-.rightUL{
+.rightUL {
   margin:0 0 15px 0;
   padding:0;
   list-style-type:none;
 }
-.rightLI{
+.rightLI {
   margin-right:15px;
   display:inline;
 }
