@@ -16,6 +16,7 @@ var addFruity = parseInt(event.target.Fruity.value);
 var addPiney = parseInt(event.target.Piney.value);
 var addSpicy = parseInt(event.target.Spicy.value);
 var addFloral = parseInt(event.target.Floral.value);
+
 var addHopStats = event.target.hopStats.value;
 var addHopDescription = event.target.hopDescription.value;
 var addBeerStyles = event.target.beerStyles.value;
