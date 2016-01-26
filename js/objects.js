@@ -26,7 +26,7 @@ function Grains (grainName, degLov, extractPot) {
 }
 
 var twoRow = new Grains('Two Row', 2, 36);
-var wheat = new Grains('Wheat', 2, 36)
+var wheat = new Grains('Wheat', 2, 36);
 var vienna = new Grains('Vienna', 5, 36);
 var munich = new Grains('Munich', 10, 35);
 var biscuit = new Grains('Biscuit', 15, 35);
@@ -68,7 +68,7 @@ var hopStatsArray = [
   'Alpha Acid: 12 - 13% Beta Acid: 6 - 8% Co-Humulone: ~24% Total Oil: ~1.1 mL/100g',//Index 17
   'Alpha Acid: 8 - 10% Beta Acid: 3 - 5% Co-Humulone: 22 - 26% Total Oil: 1.5 - 2.0 mL/100g',//Index 18
   'Alpha Acid: 12 - 14.5% Beta Acid: 4 - 6% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g',//Index 19
-  'Alpha Acid: 7 - 9.5% Beta Acid: 4 - 5% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g'//Index 20
+  'Alpha Acid: 7 - 9.5% Beta Acid: 4 - 5% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g',//Index 20
   'Alpha Acid: 3 - 4.5% Beta Acid: 3 - 4.5% Co-Humulone: 24 - 28% Total Oil: 0.5 - 1.0 mL/100g',//Index 21
   'Alpha Acid: 12 - 14% Beta Acid: 4 - 5% Co-Humulone: 15 - 20% Total Oil: 2.0 - 2.5 mL/100g',//Index 22
   'Alpha Acid: 10 - 16% Beta Acid: 6 - 7% Co-Humulone: ~23% Total Oil: 2.0 - 2.8 mL/100g',//Index 23
