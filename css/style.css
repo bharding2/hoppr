@@ -52,24 +52,18 @@ button {
   cursor:pointer;
 }
 
-button:active{
+button:active {
   background-color: #000105;
-
 }
 #chooseHopSubmit {
   font-size:12px;
-
-
 }
 #submitNewHop {
 font-size:12px;
-
 }
-
 #hopButton{
   font-size: 12px;
 }
-
 #findProfile{
   font-size: 12px;
 }
@@ -81,7 +75,7 @@ font-size:12px;
   color: #333333;
   margin-top: 1%;
   margin-bottom: 1%;
-  margin-left: 2.25%;
+  margin-left: 2.5%;
   padding:0;
   width: 23.5%;
   background-color: #d7c7ad;
@@ -90,8 +84,9 @@ font-size:12px;
 h3 {
   color: #000105;
   background-color: #a6d35d;
-  border-bottom: 1.5px solid #000105;
+  border-bottom: 1px solid #000105;
   padding-left: 2%;
+  font-size: 18px;
 }
 .leftText {
   padding: 2%;
@@ -100,14 +95,18 @@ h3 {
 fieldset {
   border: 2px solid #000105;
   border-radius: 3px;
-  margin: 1%;
-  line-height: 18px;
+  margin: 1% 1% .25% 1%;
+  line-height: 20px;
   color: #0d0d0e;
   padding: 1%;
+  font-weight: bold;
 }
 legend {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
+}
+select {
+  border: 1.5px solid #000105;
 }
 .rightcolumn {
   margin: 1% 0% 1% 0%;
