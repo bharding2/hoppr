@@ -4,6 +4,7 @@
   height: auto;
  }
 body {
+  width:100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   background-color: #000105;
@@ -28,7 +29,7 @@ h1 {
   height: 100px;
   margin: 10px 0px 5px 0px;
   background-image:url("../img/wet_hops.jpg");
-  background-size: 100%;
+  background-size: cover;
 }
 .navigation {
   width: 100%;
@@ -36,7 +37,8 @@ h1 {
   justify-content: space-around;
   background-color: #d7c7ad;
   color: #333333;
-  padding: 10px;
+  padding-top: .35%;
+  padding-bottom: .35%;
   margin: 0px 0px 5px 0px;
 }
 a{
@@ -59,13 +61,16 @@ button:active {
   font-size:12px;
 }
 #submitNewHop {
-font-size:12px;
+  font-size:12px;
 }
 #hopButton{
   font-size: 12px;
 }
 #findProfile{
   font-size: 12px;
+}
+#submitBeer{
+  font-size:12px;
 }
 .midBox{
   display: flex;
