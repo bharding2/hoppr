@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  height: auto;
  }
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -9,8 +10,8 @@ body {
   background-color: #000105;
 }
 .wrapper {
-  margin: 0 auto;
-  width: 922px;
+  margin: auto;
+  width: 85%;
 }
 .container {
   margin-bottom: 5px;
@@ -24,7 +25,7 @@ h1 {
   padding: .25% 4% .25% 1%;
 }
 .header {
-  width: 902px;
+  width: 100%;
   padding: 10px;
   height: 100px;
   margin: 10px 0px 5px 0px;
@@ -32,6 +33,7 @@ h1 {
   background-size: 100%;
 }
 .navigation {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   background-color: #d7c7ad;
@@ -43,19 +45,48 @@ a{
   padding: 1.5px 2px 1.5px 3px;
 }
 button {
+  font-size: 18px;
   border: 1.5px solid #000105;
   background-color: #3a3a3a;
   border-radius: 6px;
   color: #f7ffea;
   padding: 1.5px 2px 1.5px 3px;
+  cursor:pointer;
+
+}
+
+button:active{
+  background-color: #000105;
+
+}
+#chooseHopSubmit {
+  font-size:12px;
+
+
+}
+#submitNewHop {
+font-size:12px;
+
+}
+
+#hopButton{
+  font-size: 12px;
+}
+
+#findProfile{
+  font-size: 12px;
+}
+.midBox{
+  display: flex;
+  justify-content: space-around;
 }
 .leftcolumn {
   display: inline;
   color: #333333;
-  margin:10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
   padding:0;
-  width: 195px;
-  float: left;
+  width: 23.5%;
   background-color: #d7c7ad;
   border: solid 1px #a6d35d;
 }
@@ -67,6 +98,7 @@ h3 {
 }
 .leftText {
   padding: 2%;
+
 }
 fieldset {
   border: 2px solid #000105;
@@ -81,12 +113,10 @@ legend {
   font-size: 14px;
 }
 .rightcolumn {
-  float: right;
+  margin: 1% 0% 1% 0%;
   color: #333333;
-  margin:10px;
   padding:0;
-  width: 680px;
-  display: inline;
+  width: 71.5%;
   position: relative;
   background-color: #a6d35d;
 }
@@ -113,12 +143,16 @@ h2 {
   display:inline;
 }
 .footer {
+  display: flex;
+  justify-content: space-around;
   background-color: #d7c7ad;
-  width: 902px;
+  width: 100%;
   clear: both;
   color: #333333;
   margin: 0px 0px 10px 0px;
   padding: 10px;
+
+
 }
 .clear {
   clear: both;
