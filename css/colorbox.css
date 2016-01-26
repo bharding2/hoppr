@@ -1,1 +1,41 @@
-/*#colorBox*/
+#colorBox {
+  width: 15%;
+}
+#colorBox:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.light {
+  background-color: #ffca5a;
+}
+
+.pale {
+  background-color: #ea8f00;
+}
+.amber {
+  background-color: #cb6200;
+}
+.red{
+  background-color: #a63e00;
+}
+.darkred {
+  background-color: #882300;
+}
+
+.brown {
+  background-color: #6a0e00;
+}
+
+.darkbrown {
+  background-color: #520907;
+}
+
+.black {
+  background-color: #360607;
+}
+
+.darkblack {
+  background-color: #160607;
+}

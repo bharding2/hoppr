@@ -152,6 +152,27 @@ Beer.prototype.renderRecipe = function(){
   var statsSRM = document.createElement('li');
   statsSRM.textContent = 'SRM : ' + this.colorSRM.toFixed(0);
   statsList.appendChild(statsSRM);
+
+  var colorBox = document.getElementById('colorBox');
+  if (this.colorSRM <= 5) {
+    colorBox.setAttribute('class', 'light');
+  } else if (this.colorSRM > 5 && this.colorSRM <= 10) {
+    colorBox.setAttribute('class', 'pale');
+  } else if (this.colorSRM > 10 && this.colorSRM <= 15) {
+    colorBox.setAttribute('class', 'amber');
+  } else if (this.colorSRM > 15 && this.colorSRM <= 20) {
+    colorBox.setAttribute('class', 'red');
+  } else if (this.colorSRM > 20 && this.colorSRM <= 25) {
+    colorBox.setAttribute('class', 'darkred');
+  } else if (this.colorSRM > 25 && this.colorSRM <= 30) {
+    colorBox.setAttribute('class', 'brown');
+  } else if (this.colorSRM > 30 && this.colorSRM <= 35) {
+    colorBox.setAttribute('class', 'darkbrown');
+  } else if (this.colorSRM > 35 && this.colorSRM <= 40) {
+    colorBox.setAttribute('class', 'black');
+  } else {
+    colorBox.setAttribute('class', 'darkblack');
+  }
 }
 
 
