@@ -1,5 +1,13 @@
 'use strict';
 
+var beerHop = document.getElementById('beerHop');
+for(var i = 0; i < allHops.length; i++) {
+  var option = document.createElement('option');
+  option.innerHTML = allHops[i].hopName;
+  option.value = i;
+  beerHop.appendChild(option);
+};
+
 function Beer(beerName, beerClass, beerStyle, baseGrain, baseAmount, specGrain1, spec1Amount, specGrain2, spec2Amount, bitHop, bitAmount, flavHop, flavAmount, dryHop, dryAmount, yeast) {
   this.beerName = beerName;
   this.beerClass = beerClass;
@@ -67,9 +75,6 @@ Beer.prototype.calcABV = function(){
 
 Beer.prototype.renderRecipe = function(){
   var recipeSection = document.getElementById('recipeSection');
-  //
-  // while (recipeSection.firstChild) {
-  //   recipeSection.removeChild(recipeSection.firstChild);
 
   var h3El = document.createElement('h3');
   h3El.textContent = this.beerName + ' ' + this.beerClass + ' ' + this.beerStyle;
@@ -149,13 +154,6 @@ Beer.prototype.renderRecipe = function(){
   statsList.appendChild(statsSRM);
 }
 
-var beerHop = document.getElementById('beerHop');
-for(var i = 0; i < allHops.length; i++) {
-  var option = document.createElement('option');
-  option.innerHTML = allHops[i].hopName;
-  option.value = i;
-  beerHop.appendChild(option);
-};
 
 function getSecondHop(hopOne) {
   var percentAlikeArray = [];
