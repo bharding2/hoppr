@@ -28,7 +28,7 @@ h1 {
   padding: 10px;
   height: 100px;
   margin: 10px 0px 5px 0px;
-  background: url(http://www.bonappetit.com/wp-content/uploads/2014/09/wet-hops.jpg);
+  background-image:url("../img/wet_hops.jpg");
   background-size: 100%;
 }
 .navigation {
