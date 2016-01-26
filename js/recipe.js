@@ -1,5 +1,13 @@
 'use strict';
 
+var beerHop = document.getElementById('beerHop');
+for(var i = 0; i < allHops.length; i++) {
+  var option = document.createElement('option');
+  option.innerHTML = allHops[i].hopName;
+  option.value = i;
+  beerHop.appendChild(option);
+};
+
 function Beer(beerName, beerClass, beerStyle, baseGrain, baseAmount, specGrain1, spec1Amount, specGrain2, spec2Amount, bitHop, bitAmount, flavHop, flavAmount, dryHop, dryAmount, yeast) {
   this.beerName = beerName;
   this.beerClass = beerClass;
@@ -67,9 +75,6 @@ Beer.prototype.calcABV = function(){
 
 Beer.prototype.renderRecipe = function(){
   var recipeSection = document.getElementById('recipeSection');
-  //
-  // while (recipeSection.firstChild) {
-  //   recipeSection.removeChild(recipeSection.firstChild);
 
   var h3El = document.createElement('h3');
   h3El.textContent = this.beerName + ' ' + this.beerClass + ' ' + this.beerStyle;
@@ -122,6 +127,7 @@ Beer.prototype.renderRecipe = function(){
 
   var yeastHead = document.createElement('p');
   yeastHead.textContent = 'Yeast';
+  recipeSection.appendChild(yeastHead);
   var yeastAdd = document.createElement('p');
   yeastAdd.textContent = this.yeast.yeastName;
   recipeSection.appendChild(yeastAdd);
@@ -148,15 +154,8 @@ Beer.prototype.renderRecipe = function(){
   statsList.appendChild(statsSRM);
 }
 
-var beerHop = document.getElementById('beerHop');
-for(var i = 0; i < allHops.length; i++) {
-  var option = document.createElement('option');
-  option.innerHTML = allHops[i].hopName;
-  option.value = i;
-  beerHop.appendChild(option);
-};
 
-function getSecondHop (hopOne) {
+function getSecondHop(hopOne) {
   var percentAlikeArray = [];
   for (var i = 0; i < allHops.length; i++) {
     var diffCitrus = Math.abs(hopOne.citrus - allHops[i].citrus);
@@ -176,6 +175,106 @@ function getSecondHop (hopOne) {
   return percentAlikeArray[randomChoice];
 }
 
+function getBaseGrain(beerStyle) {
+  if (beerStyle === 'hefe') {
+    return wheat;
+  } else {
+    return twoRow;
+  }
+}
+
+function getBaseGrainAmount(beerClass) {
+  if (beerClass === 'session') {
+    return 6;
+  } else if (beerClass === 'standard') {
+    return 9;
+  } else if (beerClass === 'imperial') {
+    return 12;
+  } else {
+    return 15;
+  }
+}
+
+function getSpecGrains(beerStyle) {
+  if (beerStyle === 'pilsner') {
+    return [vienna, 3, munich, 0];
+  } else if (beerStyle === 'pale') {
+    return [vienna, 2, munich, 1];
+  } else if (beerStyle === 'amber') {
+    return [munich, 2, crystal80, 1];
+  } else if (beerStyle === 'brown') {
+    return [crystal80, 2.5, chocolate, 0.5];
+  } else if (beerStyle === 'red') {
+    return [crystal80, 2, munich, 1];
+  } else if (beerStyle === 'ipa') {
+    return [munich, 2, vienna, 1];
+  } else if (beerStyle === 'hefe') {
+    return [vienna, 2, biscuit, 1];
+  } else if (beerStyle === 'porter') {
+    return [crystal80, 2, chocolate, 1];
+  } else if (beerStyle === 'stout') {
+    return [munich, 1, chocolate, 2];
+  } else {
+    return [biscuit, 2, vienna, 1];
+  }
+}
+
+function getHopAdds (beerStyle, beerClass) {
+  var lowHop = [];
+  var midHop = [];
+  var highHop = [];
+
+  if (beerClass === 'session') {
+    lowHop = [1, 0, 1];
+    midHop = [1, 1, 0];
+    highHop = [1, 1, 1];
+  } else if (beerClass === 'standard') {
+    lowHop = [1, 1, 1];
+    midHop = [1, 1, 1];
+    highHop = [2, 2, 2];
+  } else if (beerClass === 'imperial') {
+    lowHop = [1, 1, 2];
+    midHop = [1, 2, 1];
+    highHop = [4, 2, 2];
+  } else {
+    lowHop = [1, 1, 2];
+    midHop = [1, 2, 1];
+    highHop = [4, 4, 2];
+  }
+
+  if (beerStyle === 'ipa') {
+    return highHop;
+  } else if (beerStyle === 'pilsner' || beerStyle === 'pale' || beerStyle === 'red' || beerStyle === 'porter') {
+    return midHop;
+  } else {
+    return lowHop;
+  }
+}
+
+function getYeast(beerStyle) {
+  if (beerStyle === 'pilsner') {
+    return s23;
+  } else if (beerStyle === 'pale') {
+    return us05;
+  } else if (beerStyle === 'amber') {
+    return us05;
+  } else if (beerStyle === 'brown') {
+    return s04;
+  } else if (beerStyle === 'red') {
+    return us05;
+  } else if (beerStyle === 'ipa') {
+    return us05;
+  } else if (beerStyle === 'hefe') {
+    return wb06;
+  } else if (beerStyle === 'porter') {
+    return s04;
+  } else if (beerStyle === 'stout') {
+    return s04;
+  } else {
+    return be256;
+  }
+}
+
 var makeBeer = document.getElementById('makeBeer');
 
 function handleMakeBeer (event) {
@@ -186,10 +285,24 @@ function handleMakeBeer (event) {
   var beerHop = event.target.beerHop.value;
   var hop1 = allHops[+beerHop];
   var hop2 = getSecondHop(hop1);
+  while (hop2 === hop1) {
+    hop2 = getSecondHop(hop1);
+  }
   var beerStyle = event.target.beerStyle.value;
   var beerClass = event.target.beerClass.value;
+  var baseGrain = getBaseGrain(beerStyle);
+  var baseGrainAmount = getBaseGrainAmount(beerClass);
+  var specGrainArray = getSpecGrains(beerStyle);
+  var hopAddsArray = getHopAdds(beerStyle, beerClass);
+  var yeastAdd = getYeast(beerStyle);
 
-  var newBeer = new Beer(beerName, beerClass, beerStyle, twoRow, 6, munich, 2, crystal80, 1, hop1, 1, hop2, 1, hop2, 1, us05);
+  var newBeer = new Beer(beerName, beerClass, beerStyle, baseGrain, baseGrainAmount, specGrainArray[0], specGrainArray[1], specGrainArray[2], specGrainArray[3], hop1, hopAddsArray[0], hop2, hopAddsArray[1], hop2, hopAddsArray[2], yeastAdd);
+
+  var recipeSection = document.getElementById('recipeSection');
+  while(recipeSection.firstChild) {
+    recipeSection.removeChild(recipeSection.firstChild);
+  }
+
   newBeer.renderRecipe();
 }
 
