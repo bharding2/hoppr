@@ -5,6 +5,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
+  /*background: url("img/laurel-crown-hi.png");*/
   background-color: #000105;
 }
 .wrapper {
@@ -12,7 +13,6 @@ body {
   width: 922px;
 }
 .container {
-  background: url(faux-1-2-col.gif);
   margin-bottom: 5px;
   overflow: auto;
   width: 100%;
@@ -38,6 +38,9 @@ h1 {
   color: #333333;
   padding: 10px;
   margin: 0px 0px 5px 0px;
+}
+a{
+  padding: 1.5px 2px 1.5px 3px;
 }
 button {
   border: 1.5px solid #000105;
