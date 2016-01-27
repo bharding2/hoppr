@@ -177,6 +177,27 @@ Beer.prototype.renderRecipe = function(){
   }
 }
 
+var beerImg = document.getElementById('beerImg');
+if (this.colorSRM <= 5) {
+  beerImg.setAttribute('class', 'lightBeer');
+} else if (this.colorSRM > 5 && this.colorSRM <= 10) {
+  beerImg.setAttribute('class', 'paleBeer');
+} else if (this.colorSRM > 10 && this.colorSRM <= 15) {
+  beerImg.setAttribute('class', 'amberBeer');
+} else if (this.colorSRM > 15 && this.colorSRM <= 20) {
+  beerImg.setAttribute('class', 'redBeer');
+} else if (this.colorSRM > 20 && this.colorSRM <= 25) {
+  beerImg.setAttribute('class', 'darkredBeer');
+} else if (this.colorSRM > 25 && this.colorSRM <= 30) {
+  beerImg.setAttribute('class', 'brownBeer');
+} else if (this.colorSRM > 30 && this.colorSRM <= 35) {
+  beerImg.setAttribute('class', 'darkbrownBeer');
+} else if (this.colorSRM > 35 && this.colorSRM <= 40) {
+  beerImg.setAttribute('class', 'blackBeer');
+} else {
+  beerImg.setAttribute('class', 'darkblackBeer');
+}
+}
 
 function getSecondHop(hopOne) {
   var percentAlikeArray = [];
