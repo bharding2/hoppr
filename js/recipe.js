@@ -223,9 +223,9 @@ function getSecondHop(hopOne) {
 
 function getBaseGrain(beerStyle) {
   if (beerStyle === 'hefe') {
-    return wheat;
+    return allGrains[1];
   } else {
-    return twoRow;
+    return allGrains[0];
   }
 }
 
@@ -243,25 +243,25 @@ function getBaseGrainAmount(beerClass) {
 
 function getSpecGrains(beerStyle) {
   if (beerStyle === 'pilsner') {
-    return [vienna, 3, munich, 0];
+    return [allGrains[2], 3, allGrains[3], 0];
   } else if (beerStyle === 'pale') {
-    return [vienna, 2, munich, 1];
+    return [allGrains[2], 2, allGrains[3], 1];
   } else if (beerStyle === 'amber') {
-    return [munich, 2, crystal80, 1];
+    return [allGrains[3], 2, allGrains[5], 1];
   } else if (beerStyle === 'brown') {
-    return [crystal80, 2.5, chocolate, 0.5];
+    return [allGrains[5], 2.5, allGrains[6], 0.5];
   } else if (beerStyle === 'red') {
-    return [crystal80, 2, munich, 1];
+    return [allGrains[5], 2, allGrains[3], 1];
   } else if (beerStyle === 'ipa') {
-    return [munich, 2, vienna, 1];
+    return [allGrains[3], 2, allGrains[2], 1];
   } else if (beerStyle === 'hefe') {
-    return [vienna, 2, biscuit, 1];
+    return [allGrains[2], 2, allGrains[4], 1];
   } else if (beerStyle === 'porter') {
-    return [crystal80, 2, chocolate, 1];
+    return [allGrains[5], 2, allGrains[6], 1];
   } else if (beerStyle === 'stout') {
-    return [munich, 1, chocolate, 2];
+    return [allGrains[3], 1, allGrains[6], 2];
   } else {
-    return [biscuit, 2, vienna, 1];
+    return [allGrains[4], 2, allGrains[2], 1];
   }
 }
 
@@ -299,25 +299,25 @@ function getHopAdds (beerStyle, beerClass) {
 
 function getYeast(beerStyle) {
   if (beerStyle === 'pilsner') {
-    return s23;
+    return allYeasts[2];
   } else if (beerStyle === 'pale') {
-    return us05;
+    return allYeasts[0];
   } else if (beerStyle === 'amber') {
-    return us05;
+    return allYeasts[0];
   } else if (beerStyle === 'brown') {
-    return s04;
+    return allYeasts[1];
   } else if (beerStyle === 'red') {
-    return us05;
+    return allYeasts[0];
   } else if (beerStyle === 'ipa') {
-    return us05;
+    return allYeasts[0];
   } else if (beerStyle === 'hefe') {
-    return wb06;
+    return allYeasts[3];
   } else if (beerStyle === 'porter') {
-    return s04;
+    return allYeasts[1];
   } else if (beerStyle === 'stout') {
-    return s04;
+    return allYeasts[1];
   } else {
-    return be256;
+    return allYeasts[4];
   }
 }
 
