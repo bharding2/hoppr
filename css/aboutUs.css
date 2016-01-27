@@ -10,7 +10,7 @@
 .col-1-1 {
   width: 45%;
   height:45%;
-  border: solid;
+  border: solid black;
   float:left;
   margin-left: 2.5%;
   background-color: black;
@@ -20,7 +20,7 @@
 .col-2-1 {
   width: 45%;
   height:45%;
-  border: solid;
+  border: solid black;
   float:right;
   margin-right: 2.5%;
   background-color: black;
@@ -31,13 +31,11 @@
   width: 65%;
   height:100%;
   float: left;
-  border: 1px solid red;
 }
 .info {
   width: 30%;
   height:100%;
   float: right;
-  border: 1px solid blue;
 }
 .infoBox {
   margin-left: 6px;
@@ -54,15 +52,30 @@
 }
 #topRight {
   float: right;
+  background-image: url("../img/zach-burger.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #infoTopRight {
   float: left;
 }
 #topLeft {
   float: right;
+  background-image: url("../img/ben.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 #infoTopLeft {
   float: left;
+}
+#bottomLeft {
+  float: left;
+  background-image: url("../img/ethan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .infoBox {
   color: white;
