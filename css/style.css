@@ -8,6 +8,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   background-color: #000105;
+  background-image: url("../img/laurel.png");
+  background-size: 100% 100%;
 }
 .wrapper {
   margin: auto;
@@ -85,6 +87,7 @@ button:active {
   width: 23.5%;
   background-color: #d7c7ad;
   border: solid 1px #a6d35d;
+  opacity: .95;
 }
 h3 {
   color: #000105;
@@ -120,6 +123,7 @@ select {
   width: 71.5%;
   position: relative;
   background-color: #a6d35d;
+  opacity: .95;
 }
 h2 {
   margin-top: .25%;
