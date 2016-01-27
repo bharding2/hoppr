@@ -1,17 +1,72 @@
 .rightcolumn {
-  margin: 1.5% 5% 1.5% 4%;
-  color: #333333;
+  margin: 1.5% 5% 1.5% 1%; /*margin: 1.5% 5% 1.5% 4%;*/
+  color: #333333; /**/
   padding:0;
-  width: 95%;
-  height: 80%;
+  width: 100%;  /*width: 95%;*/
+  height: 100%; /*height: 80%;*/
   position: relative;
   background-color: #a6d35d;
 }
-
 .col-1-1 {
-
+  width: 45%;
+  height:45%;
+  border: solid;
+  float:left;
+  margin-left: 2.5%;
+  background-color: black;
+  box-shadow: 10px 10px 5px #888888;
+  margin-top: 5px;
 }
-
 .col-2-1 {
-
+  width: 45%;
+  height:45%;
+  border: solid;
+  float:right;
+  margin-right: 2.5%;
+  background-color: black;
+  box-shadow: 10px 10px 10px gray;
+  margin-top: 5px;
+}
+.pic {
+  width: 65%;
+  height:100%;
+  float: left;
+  border: 1px solid red;
+}
+.info {
+  width: 30%;
+  height:100%;
+  float: right;
+  border: 1px solid blue;
+}
+.infoBox {
+  margin-left: 6px;
+}
+#bottomRight {
+  background-image: url("../img/davez.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+}
+#bottomRight:hover {
+  background-image: url("../img/calvinandhobbes.jpg");
+}
+#topRight {
+  float: right;
+}
+#infoTopRight {
+  float: left;
+}
+#topLeft {
+  float: right;
+}
+#infoTopLeft {
+  float: left;
+}
+.infoBox {
+  color: white;
+}
+li {
+  margin-left: 15px;
 }
