@@ -41,11 +41,11 @@ newHopContent.appendChild(populateH3);
   flavorHead.textContent = 'Flavor Profile';
   newHopContent.appendChild(flavorHead);
   var flavorContent = document.createElement('p');
-  flavorContent.textContent = 'citrus: ' + addCitrus +
-                              ' fruity: '  + addFruity +
-                              ' piney: '  + addPiney +
-                              ' spicey: '  + addSpicy +
-                              ' floral: '  + addFloral;
+  flavorContent.textContent = 'Citrus: ' + addCitrus +
+                              ' Fruity: '  + addFruity +
+                              ' Piney: '  + addPiney +
+                              ' Spicey: '  + addSpicy +
+                              ' Floral: '  + addFloral;
   newHopContent.appendChild(flavorContent);
 var hopStatsContent = document.createElement('p');
 hopStatsContent.textContent = addHopStats;
@@ -98,11 +98,11 @@ function handleChooseHopDrop(event) {
   flavorHead.textContent = 'Flavor Profile';
   newHopContent.appendChild(flavorHead);
   var flavorContent = document.createElement('p');
-  flavorContent.textContent = 'citrus: ' + allHops[hopIndex].citrus +
-                              ' fruity: '  + allHops[hopIndex].fruity +
-                              ' piney: '  + allHops[hopIndex].piney +
-                              ' spicey: '  + allHops[hopIndex].spicey +
-                              ' floral: '  + allHops[hopIndex].floral;
+  flavorContent.textContent = 'Citrus: ' + allHops[hopIndex].citrus +
+                              ' Fruity: '  + allHops[hopIndex].fruity +
+                              ' Piney: '  + allHops[hopIndex].piney +
+                              ' Spicey: '  + allHops[hopIndex].spicey +
+                              ' Floral: '  + allHops[hopIndex].floral;
   newHopContent.appendChild(flavorContent);
 var hopStatsContent = document.createElement('p');
 hopStatsContent.textContent = allHops[hopIndex].hopStats;
