@@ -99,7 +99,7 @@ function handleHopComp(event) {
     compareContent.removeChild(compareContent.firstChild);
   }
   var nameH3 = document.createElement('h3');
-  nameH3.textContent = compHop.hopName +' (' + compHop.alphaAcid + '% AA) Comparisons';
+  nameH3.textContent = compHop.hopName +' (' + compHop.alphaAcid + '% AA) Matches';
   compareContent.appendChild(nameH3);
 
   for (var i = 1; i < 11; ++i) {
@@ -108,7 +108,40 @@ function handleHopComp(event) {
     compareContent.appendChild(pComp);
   }
 }
+function handleHopProfile(event) {
+  console.log(event);
+  event.preventDefault();
 
+  var profileCompHop = new Object();
+  profileCompHop.alphaAcid = 0;
+  profileCompHop.citrus = parseInt(event.target.citrus.value);
+  profileCompHop.floral = parseInt(event.target.floral.value);
+  profileCompHop.fruity = parseInt(event.target.fruity.value);
+  profileCompHop.piney = parseInt(event.target.piney.value);
+  profileCompHop.spicey = parseInt(event.target.spicy.value);
+  percentArray = [];
+  calcDryhopComp(profileCompHop);
 
+  percentArray.sort(function(a, b) {return b.percentAlike - a.percentAlike;});
+
+  var compareContent = document.getElementById('compareContent');
+
+  while(compareContent.firstChild) {
+    compareContent.removeChild(compareContent.firstChild);
+}
+  var profileH3 = document.createElement('h3');
+  profileH3.textContent = 'Your top ten flavor profile matches';
+  compareContent.appendChild(profileH3);
+
+  for (var i = 0; i < 10; ++i) {
+    var pComp = document.createElement('p');
+    pComp.textContent = percentArray[i].hopName +' (' + percentArray[i].alphaAcid + '% AA): ' + percentArray[i].percentAlike + '%';
+    compareContent.appendChild(pComp);
+  }
+
+}
 var compareHops = document.getElementById('compareHops');
 compareHops.addEventListener('submit', handleHopComp);
+
+var hopProfile = document.getElementById('hopProfile');
+hopProfile.addEventListener('submit', handleHopProfile);
