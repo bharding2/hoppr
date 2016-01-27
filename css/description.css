@@ -1,0 +1,30 @@
+
+#descriptionContent h4 {
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 200%;
+  padding: 0% 5% 0 5%;
+}
+
+#descriptionContent ul {
+  margin-right: 15px;
+  padding: 2% 5% 5% 5%;
+}
+
+#descriptionContent li {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 1%;
+  line-height: 150%;
+}
+
+#descriptionContent p {
+  padding: 1% 1% 1% 5%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#descriptionContent h3 {
+  padding-top: 2%;
+  margin-bottom: 2%;
+}

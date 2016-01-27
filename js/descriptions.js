@@ -17,11 +17,11 @@ var addPiney = parseInt(event.target.Piney.value);
 var addSpicy = parseInt(event.target.Spicy.value);
 var addFloral = parseInt(event.target.Floral.value);
 
-var addHopStats = event.target.hopStats.value;
-var addHopDescription = event.target.hopDescription.value;
-var addBeerStyles = event.target.beerStyles.value;
+// var addHopStats = event.target.hopStats.value;
+// var addHopDescription = event.target.hopDescription.value;
+// var addBeerStyles = event.target.beerStyles.value;
 
-var newHop = new Hops(addHopName, addHopAlphaAcid, addCitrus, addFruity, addPiney, addSpicy, addFloral, addHopStats, addHopDescription, addBeerStyles);
+var newHop = new Hops(addHopName, addHopAlphaAcid, addCitrus, addFruity, addPiney, addSpicy, addFloral);
 console.log(newHop);
 
 localStorage.setItem('allHops', JSON.stringify(allHops));
@@ -49,15 +49,15 @@ newHopContent.appendChild(populateH3);
                               ' Spicey: '  + addSpicy +
                               ' Floral: '  + addFloral;
   newHopContent.appendChild(flavorContent);
-var hopStatsContent = document.createElement('p');
-hopStatsContent.textContent = addHopStats;
-newHopContent.appendChild(hopStatsContent);
-var hopDescriptionContent = document.createElement('p');
-hopDescriptionContent.textContent = addHopDescription;
-newHopContent.appendChild(hopDescriptionContent);
-var beerStylesContent = document.createElement('p');
-beerStylesContent.textContent = addBeerStyles;
-newHopContent.appendChild(beerStylesContent);
+// var hopStatsContent = document.createElement('p');
+// hopStatsContent.textContent = addHopStats;
+// newHopContent.appendChild(hopStatsContent);
+// var hopDescriptionContent = document.createElement('p');
+// hopDescriptionContent.textContent = addHopDescription;
+// newHopContent.appendChild(hopDescriptionContent);
+// var beerStylesContent = document.createElement('p');
+// beerStylesContent.textContent = addBeerStyles;
+// newHopContent.appendChild(beerStylesContent);
 
 var addHopDrop = document.getElementById('addHopDrop');
 addHopDrop.textContent = ' ';
