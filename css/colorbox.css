@@ -2,11 +2,13 @@
   width: 15%;
   margin-left: 2%;
   margin-bottom: 2%;
+  float:left;
 }
 #colorBox:after {
   content: "";
   display: block;
   padding-bottom: 100%;
+  float:left;
 }
 
 .light {
@@ -72,6 +74,7 @@ h4 {
   margin-bottom: 2%;
   margin-right: 2%;
   float: right;
+  background-size: cover;
 }
 #beerImg:after {
   content: "";
@@ -80,52 +83,61 @@ h4 {
   float: right;
 }
 .lightBeer {
-  background-image: url("../img/pilsner.jpg")
+  background-image: url("../img/pilsner.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .paleBeer {
-  background-image: url("../img/paleale2.jpg")
+  background-image: url("../img/ipa.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 .amberBeer {
-  background-image: url("../img/amber.jpg")
+  background-image: url("../img/amber.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 .redBeer {
-  background-image: url("../img/red.jpg")
+  background-image: url("../img/red.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 .darkredBeer {
-  background-image: url("../img/brownbeer.jpg")
+  background-image: url("../img/brownbeer.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .brownBeer {
-  background-image: url("../img/darkbrownbeer.jpg")
+  background-image: url("../img/darkbrownbeer.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .darkbrownBeer {
-  background-image: url("../img/doubledarkbrown.jpg")
+  background-image: url("../img/doubledarkbrown.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .blackBeer {
-  background-image: url("../img/stout.jpg")
+  background-image: url("../img/stout.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .darkblackBeer {
-  background-image: url("../img/stout1.jpg")
+  background-image: url("../img/stout1.jpg");
+  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
