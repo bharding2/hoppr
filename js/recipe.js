@@ -197,7 +197,7 @@ if (this.colorSRM <= 5) {
 } else {
   beerImg.setAttribute('class', 'darkblackBeer');
 }
-
+}
 
 function getSecondHop(hopOne) {
   var percentAlikeArray = [];
