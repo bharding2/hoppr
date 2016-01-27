@@ -84,60 +84,51 @@ h4 {
 }
 .lightBeer {
   background-image: url("../img/pilsner.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .paleBeer {
   background-image: url("../img/ipa.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 .amberBeer {
   background-image: url("../img/amber.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 .redBeer {
   background-image: url("../img/red.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 .darkredBeer {
   background-image: url("../img/brownbeer.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .brownBeer {
   background-image: url("../img/darkbrownbeer.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .darkbrownBeer {
   background-image: url("../img/doubledarkbrown.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .blackBeer {
   background-image: url("../img/stout.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
 
 .darkblackBeer {
   background-image: url("../img/stout1.jpg");
-  /*background-size: cover;*/
   border: 2px solid black;
   border-radius: 5px;
 }
