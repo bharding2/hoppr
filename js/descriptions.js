@@ -24,6 +24,8 @@ var addBeerStyles = event.target.beerStyles.value;
 var newHop = new Hops(addHopName, addHopAlphaAcid, addCitrus, addFruity, addPiney, addSpicy, addFloral, addHopStats, addHopDescription, addBeerStyles);
 console.log(newHop);
 
+localStorage.setItem('allHops', JSON.stringify(allHops));
+
 var newHopContent = document.getElementById('descriptionContent');
 while(descriptionContent.firstChild) {
   descriptionContent.removeChild(descriptionContent.firstChild);

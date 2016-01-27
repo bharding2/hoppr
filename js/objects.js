@@ -1,5 +1,7 @@
 
-var allHops = [];
+var allHops = JSON.parse(localStorage.getItem('allHops'));
+var allGrains = JSON.parse(localStorage.getItem('allGrains'));
+var allYeasts = JSON.parse(localStorage.getItem('allYeasts'));
 
 function Hops (hopName, alphaAcid, citrus, fruity, piney, spicey, floral, hopStats, hopDescription, beerStyles) {
   this.hopName = hopName;
@@ -16,7 +18,6 @@ function Hops (hopName, alphaAcid, citrus, fruity, piney, spicey, floral, hopSta
   allHops.push(this);
 }
 
-var allGrains = [];
 
 function Grains (grainName, degLov, extractPot) {
   this.grainName = grainName;
@@ -25,15 +26,7 @@ function Grains (grainName, degLov, extractPot) {
   allGrains.push(this);
 }
 
-var twoRow = new Grains('Two Row', 2, 36);
-var wheat = new Grains('Wheat', 2, 36);
-var vienna = new Grains('Vienna', 5, 36);
-var munich = new Grains('Munich', 10, 35);
-var biscuit = new Grains('Biscuit', 15, 35);
-var crystal80 = new Grains('Crystal 80', 80, 33);
-var chocolate = new Grains('Chocolate', 350, 27);
 
-var allYeasts = [];
 
 function Yeasts (yeastName, attenuation) {
   this.yeastName = yeastName;
@@ -41,11 +34,6 @@ function Yeasts (yeastName, attenuation) {
   allYeasts.push(this);
 }
 
-var us05 = new Yeasts('US-05 American', 0.75);
-var s04 = new Yeasts('S-04 British', 0.75);
-var s23 = new Yeasts('S-23 Lager', 0.75);
-var wb06 = new Yeasts('WB-06 Wheat Beer', 0.75);
-var be256 = new Yeasts('BE-256 Belgian', 0.75);
 
 var hopStatsArray = [
   'Alpha Acid: 8 - 11% Beta Acid: 6 - 7% Co-Humulone: 21 - 24% Total Oil: 1.5 - 1.9 mL/100g',//Index 0
@@ -146,6 +134,8 @@ var beerStylesArray = [
   'English-style Ale'//Index 29
 ];
 
+if(!allHops){
+  allHops=[];
 
   var amarillo = new Hops('Amarillo', 9 ,7, 5, 0, 0, 3, hopStatsArray[0], hopDescriptionArray[0], beerStylesArray[0]);
   var cascade = new Hops('Cascade', 5, 5, 3, 3, 3, 5, hopStatsArray[1], hopDescriptionArray[1], beerStylesArray[1]);
@@ -178,3 +168,25 @@ var beerStylesArray = [
   var ultra = new Hops('Ultra', 3, 0, 3, 0, 5, 7);
   var warrior = new Hops('Warrior', 16, 5, 0, 5, 0, 5);
   var willamette = new Hops('Willamette', 5, 0, 3, 3, 5, 5);
+  localStorage.setItem('allHops', JSON.stringify(allHops));
+}
+if (!allGrains){
+  allGrains=[];
+  var twoRow = new Grains('Two Row', 2, 36);
+  var wheat = new Grains('Wheat', 2, 36);
+  var vienna = new Grains('Vienna', 5, 36);
+  var munich = new Grains('Munich', 10, 35);
+  var biscuit = new Grains('Biscuit', 15, 35);
+  var crystal80 = new Grains('Crystal 80', 80, 33);
+  var chocolate = new Grains('Chocolate', 350, 27);
+  localStorage.setItem('allGrains', JSON.stringify(allGrains));
+}
+if (!allYeasts){
+  allYeasts=[];
+  var us05 = new Yeasts('US-05 American', 0.75);
+  var s04 = new Yeasts('S-04 British', 0.75);
+  var s23 = new Yeasts('S-23 Lager', 0.75);
+  var wb06 = new Yeasts('WB-06 Wheat Beer', 0.75);
+  var be256 = new Yeasts('BE-256 Belgian', 0.75);
+  localStorage.setItem('allYeasts', JSON.stringify(allYeasts));
+}
