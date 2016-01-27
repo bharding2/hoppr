@@ -31,6 +31,9 @@
   width: 65%;
   height:100%;
   float: left;
+  border: solid;
+  border-color: white;
+  border-radius: 50%;
 }
 .info {
   width: 30%;
@@ -82,4 +85,4 @@
 }
 li {
   margin-left: 15px;
-}
+}git
