@@ -57,6 +57,15 @@ var beerStylesContent = document.createElement('p');
 beerStylesContent.textContent = addBeerStyles;
 newHopContent.appendChild(beerStylesContent);
 
+var addHopDrop = document.getElementById('addHopDrop');
+addHopDrop.textContent = ' ';
+for(var i = 0; i < allHops.length; i++) {
+  var option = document.createElement('option');
+  option.innerHTML = allHops[i].hopName;
+  option.value = i;
+  addHopDrop.appendChild(option);
+};
+
 };
 
 var addHopProfile =
@@ -104,4 +113,5 @@ newHopContent.appendChild(hopDescriptionContent);
 var beerStylesContent = document.createElement('p');
 beerStylesContent.textContent = allHops[hopIndex].beerStyles;
 newHopContent.appendChild(beerStylesContent);
+
 }
