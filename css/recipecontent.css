@@ -1,0 +1,29 @@
+.recipe h4 {
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 200%;
+  padding: 0% 5% 0 5%;
+}
+
+.recipe ul {
+  margin-right: 15px;
+  padding: 2% 5% 5% 5%;
+}
+
+.recipe li {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 1%;
+  line-height: 150%;
+}
+
+.recipe p {
+  padding: 1% 1% 1% 5%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.recipe h3 {
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
