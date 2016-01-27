@@ -80,7 +80,7 @@ Beer.prototype.renderRecipe = function(){
   h3El.textContent = this.beerName + ' ' + this.beerClass + ' ' + this.beerStyle;
   recipeSection.appendChild(h3El);
 
-  var grainHead = document.createElement('p');
+  var grainHead = document.createElement('h4');
   grainHead.textContent = 'Grain Bill';
   recipeSection.appendChild(grainHead);
   var grainBill = document.createElement('ul');
@@ -101,7 +101,7 @@ Beer.prototype.renderRecipe = function(){
     grainBill.appendChild(listSpec2);
   }
 
-  var hopHead = document.createElement('p');
+  var hopHead = document.createElement('h4');
   hopHead.textContent = 'Hop Additions';
   recipeSection.appendChild(hopHead);
   var hopAdds = document.createElement('ul');
@@ -125,14 +125,16 @@ Beer.prototype.renderRecipe = function(){
     hopAdds.appendChild(listDryHop);
   }
 
-  var yeastHead = document.createElement('p');
+  var yeastHead = document.createElement('h4');
   yeastHead.textContent = 'Yeast';
   recipeSection.appendChild(yeastHead);
-  var yeastAdd = document.createElement('p');
+  var yeastUl = document.createElement('ul');
+  recipeSection.appendChild(yeastUl);
+  var yeastAdd = document.createElement('li');
   yeastAdd.textContent = this.yeast.yeastName;
-  recipeSection.appendChild(yeastAdd);
+  yeastUl.appendChild(yeastAdd);
 
-  var beerStats = document.createElement('p');
+  var beerStats = document.createElement('h4');
   beerStats.textContent = 'Beer Stats';
   recipeSection.appendChild(beerStats);
   var statsList = document.createElement('ul');

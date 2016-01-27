@@ -1,5 +1,7 @@
 #colorBox {
   width: 15%;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
 #colorBox:after {
   content: "";
@@ -9,33 +11,58 @@
 
 .light {
   background-color: #ffca5a;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .pale {
   background-color: #ea8f00;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .amber {
   background-color: #cb6200;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .red{
   background-color: #a63e00;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 .darkred {
   background-color: #882300;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .brown {
   background-color: #6a0e00;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .darkbrown {
   background-color: #520907;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .black {
   background-color: #360607;
+  border: 2px solid black;
+  border-radius: 5px;
 }
 
 .darkblack {
   background-color: #160607;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+li {
+  margin-left: 25px;
+  color: black;
+}
+h4 {
+  color: #000105;
 }
