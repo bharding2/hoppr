@@ -96,6 +96,12 @@ h3 {
   padding-left: 2%;
   font-size: 18px;
 }
+h4 {
+  color: #000105;
+}
+li {
+  color: #000105;
+}
 .leftText {
   padding: 2%;
 
