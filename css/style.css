@@ -155,7 +155,7 @@ h2 {
 }
 .footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   background-color: #d7c7ad;
   width: 100%;
   clear: both;
@@ -166,4 +166,8 @@ h2 {
 .clear {
   clear: both;
   background: none;
+ }
+ .p {
+   margin: 15%;
+
  }
