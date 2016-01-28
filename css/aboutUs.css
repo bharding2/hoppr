@@ -123,6 +123,7 @@
   font-weight: bold;
 }
 li {
+  color:white;
   margin-left: 15px;
 }
 .bottomRow {
@@ -153,7 +154,9 @@ h2 {
 span {
   font-size: 1.5em;
 }
-
+h4{
+  color: white;
+}
 h2 {
   animation-duration: 2.5s;
   animation-name: slidein;
