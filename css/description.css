@@ -9,6 +9,7 @@
 #descriptionContent ul {
   margin-right: 15px;
   padding: 2% 5% 5% 5%;
+  color: #000105;
 }
 
 #descriptionContent li {
@@ -16,15 +17,18 @@
   font-size: 14px;
   padding: 1%;
   line-height: 150%;
+  color: #000105;
 }
 
 #descriptionContent p {
   padding: 1% 1% 1% 5%;
   font-size: 14px;
   font-weight: bold;
+  color: #000105;
 }
 
 #descriptionContent h3 {
   padding-top: 2%;
   margin-bottom: 2%;
+  color: #000105;
 }
