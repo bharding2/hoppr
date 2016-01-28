@@ -224,7 +224,7 @@ function getSecondHop(hopOne) {
 }
 
 function getBaseGrain(beerStyle) {
-  if (beerStyle === 'hefe' || beerStyle ==='weizenbock' || beerStyle === 'dunkelweizen') {
+  if (beerStyle === 'Hefe' || beerStyle ==='Weizenbock' || beerStyle === 'Dunkelweizen') {
     return allGrains[1];
   } else {
     return allGrains[0];
@@ -232,11 +232,11 @@ function getBaseGrain(beerStyle) {
 }
 
 function getBaseGrainAmount(beerClass) {
-  if (beerClass === 'session') {
+  if (beerClass === 'Session') {
     return 6;
-  } else if (beerClass === 'standard') {
+  } else if (beerClass === 'Standard') {
     return 9;
-  } else if (beerClass === 'imperial') {
+  } else if (beerClass === 'Imperial') {
     return 12;
   } else {
     return 15;
@@ -244,33 +244,33 @@ function getBaseGrainAmount(beerClass) {
 }
 
 function getSpecGrains(beerStyle) {
-  if (beerStyle === 'pilsner') {
+  if (beerStyle === 'Pilsner') {
     return [allGrains[2], 3, allGrains[3], 0];
-  } else if (beerStyle === 'pale') {
+  } else if (beerStyle === 'Pale') {
     return [allGrains[2], 2, allGrains[3], 1];
-  } else if (beerStyle === 'amber') {
+  } else if (beerStyle === 'Amber') {
     return [allGrains[3], 2, allGrains[5], 1];
-  } else if (beerStyle === 'brown') {
+  } else if (beerStyle === 'Brown') {
     return [allGrains[5], 2.5, allGrains[6], 0.5];
-  } else if (beerStyle === 'red') {
+  } else if (beerStyle === 'Red') {
     return [allGrains[5], 2, allGrains[3], 1];
-  } else if (beerStyle === 'ipa') {
+  } else if (beerStyle === 'IPA') {
     return [allGrains[3], 2, allGrains[2], 1];
-  } else if (beerStyle === 'hefe') {
+  } else if (beerStyle === 'Hefe') {
     return [allGrains[2], 2, allGrains[4], 1];
-  } else if (beerStyle === 'porter') {
-    return [allGrains[4], 2, allGrains[7], 1];
-  } else if (beerStyle === 'stout') {
+  } else if (beerStyle === 'Porter') {
+    return [allGrains[3], 2, allGrains[7], 1];
+  } else if (beerStyle === 'Stout') {
     return [allGrains[3], 1, allGrains[6], 2];
-  } else if (beerStyle === 'belgian'){
+  } else if (beerStyle === 'Belgian'){
     return [allGrains[4], 2, allGrains[2], 1];
-  } else if (beerStyle === 'rye') {
+  } else if (beerStyle === 'Rye') {
     return [allGrains[8], 3, allGrains[3], 0];
-  } else if (beerStyle === 'blonde') {
+  } else if (beerStyle === 'Blonde') {
     return [allGrains[1], 2, allGrains[3], 1];
-  } else if (beerStyle === 'cda') {
+  } else if (beerStyle === 'CDA') {
     return [allGrains[2], 2, allGrains[7], 1];
-  } else if (beerStyle === 'weizenbock') {
+  } else if (beerStyle === 'Weizenbock') {
     return [allGrains[5], 3, allGrains[3], 0];
   } else {
     return [allGrains[3], 2.25, allGrains[6], 0.75];
@@ -282,15 +282,15 @@ function getHopAdds (beerStyle, beerClass) {
   var midHop = [];
   var highHop = [];
 
-  if (beerClass === 'session') {
+  if (beerClass === 'Session') {
     lowHop = [1, 0, 1];
     midHop = [1, 1, 0];
     highHop = [1, 1, 1];
-  } else if (beerClass === 'standard') {
+  } else if (beerClass === 'Standard') {
     lowHop = [1, 1, 1];
     midHop = [1, 1, 1];
     highHop = [2, 2, 2];
-  } else if (beerClass === 'imperial') {
+  } else if (beerClass === 'Imperial') {
     lowHop = [1, 1, 2];
     midHop = [1, 2, 1];
     highHop = [4, 2, 2];
@@ -300,9 +300,9 @@ function getHopAdds (beerStyle, beerClass) {
     highHop = [4, 4, 2];
   }
 
-  if (beerStyle === 'ipa' || beerStyle === 'cda') {
+  if (beerStyle === 'IPA' || beerStyle === 'CDA') {
     return highHop;
-  } else if (beerStyle === 'pilsner' || beerStyle === 'pale' || beerStyle === 'red' || beerStyle === 'porter' || beerStyle === 'rye') {
+  } else if (beerStyle === 'Pilsner' || beerStyle === 'Pale' || beerStyle === 'Red' || beerStyle === 'Porter' || beerStyle === 'Rye') {
     return midHop;
   } else {
     return lowHop;
@@ -310,36 +310,16 @@ function getHopAdds (beerStyle, beerClass) {
 }
 
 function getYeast(beerStyle) {
-  if (beerStyle === 'pilsner') {
+  if (beerStyle === 'Pilsner') {
     return allYeasts[2];
-  } else if (beerStyle === 'pale') {
-    return allYeasts[0];
-  } else if (beerStyle === 'amber') {
-    return allYeasts[0];
-  } else if (beerStyle === 'brown') {
-    return allYeasts[1];
-  } else if (beerStyle === 'red') {
-    return allYeasts[0];
-  } else if (beerStyle === 'ipa') {
-    return allYeasts[0];
-  } else if (beerStyle === 'hefe') {
-    return allYeasts[3];
-  } else if (beerStyle === 'porter') {
-    return allYeasts[1];
-  } else if (beerStyle === 'stout') {
-    return allYeasts[1];
-  } else if (beerStyle === 'belgian') {
+  } else if (beerStyle === 'Belgian') {
     return allYeasts[4];
-  } else if (beerStyle === 'rye') {
-    return allYeasts[1];
-  } else if (beerStyle === 'blonde') {
+  } else if (beerStyle === 'Weizenbock' || beerStyle === 'Dunkelweizen' || beerStyle === 'Hefe') {
+    return allYeasts[3];
+  } else if (beerStyle === 'Pale' || beerStyle === 'Amber' || beerStyle === 'Red' || beerStyle === 'IPA' || beerStyle === 'Blonde') {
     return allYeasts[0];
-  } else if (beerStyle === 'weizenbock') {
-    return allYeasts[3];
-  } else if (beerStyle === 'cda') {
-    return allYeasts[1];
   } else {
-    return allYeasts[3];
+    return allYeasts[1];
   }
 }
 
