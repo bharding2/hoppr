@@ -156,6 +156,7 @@ Beer.prototype.renderRecipe = function(){
   statsList.appendChild(statsSRM);
 
   var colorBox = document.getElementById('colorBox');
+  colorBox.removeAttribute('hidden');
   if (this.colorSRM <= 5) {
     colorBox.setAttribute('class', 'light');
   } else if (this.colorSRM > 5 && this.colorSRM <= 10) {
@@ -177,6 +178,7 @@ Beer.prototype.renderRecipe = function(){
   }
 
   var beerImg = document.getElementById('beerImg');
+  beerImg.removeAttribute('hidden');
   if (this.colorSRM <= 5) {
     beerImg.setAttribute('class', 'lightBeer');
   } else if (this.colorSRM > 5 && this.colorSRM <= 10) {

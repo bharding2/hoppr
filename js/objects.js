@@ -18,7 +18,6 @@ function Hops (hopName, alphaAcid, citrus, fruity, piney, spicey, floral, hopSta
   allHops.push(this);
 }
 
-
 function Grains (grainName, degLov, extractPot) {
   this.grainName = grainName;
   this.degLov = degLov;
@@ -26,14 +25,11 @@ function Grains (grainName, degLov, extractPot) {
   allGrains.push(this);
 }
 
-
-
 function Yeasts (yeastName, attenuation) {
   this.yeastName = yeastName;
   this.attenuation = attenuation;
   allYeasts.push(this);
 }
-
 
 var hopStatsArray = [
   'Alpha Acid: 8 - 11% Beta Acid: 6 - 7% Co-Humulone: 21 - 24% Total Oil: 1.5 - 1.9 mL/100g',//Index 0
@@ -66,7 +62,6 @@ var hopStatsArray = [
   'Alpha Acid: 2 - 3.5% Beta Acid: 3 - 4.5% Co-Humulone: 23 - 38% Total Oil: 1.3 - 1.5 mL/100g',//Index 27
   'Alpha Acid: 15 - 17% Beta Acid: 4.5 - 5.5% Co-Humulone: 24 - 26% Total Oil: 1.0 - 2.0 mL/100g',//Index 28
   'Alpha Acid: 4 - 6% Beta Acid: 3 - 4.5% Co-Humulone: 30 - 35% Total Oil: 1 - 1.5 mL/100g'//Index 29
-
 ];
 
 var hopDescriptionArray = [
@@ -101,6 +96,7 @@ var hopDescriptionArray = [
   'Mild and resinous with subtle citrus, pine and herbal characteristics',//Index 28
   'Mild and pleasant with slightly spicy and floral tones'//Index 29
 ];
+
 var beerStylesArray = [
   'IPA',//Index 0
   'American Pale Ale',//Index 1
@@ -134,9 +130,8 @@ var beerStylesArray = [
   'English-style Ale'//Index 29
 ];
 
-if(!allHops){
-  allHops=[];
-
+if (!allHops) {
+  allHops = [];
   var amarillo = new Hops('Amarillo', 9 ,7, 5, 0, 0, 3, hopStatsArray[0], hopDescriptionArray[0], beerStylesArray[0]);
   var cascade = new Hops('Cascade', 5, 5, 3, 3, 3, 5, hopStatsArray[1], hopDescriptionArray[1], beerStylesArray[1]);
   var centennial = new Hops('Centennial', 10, 7, 0, 3, 0, 7, hopStatsArray[2],hopDescriptionArray[2], beerStylesArray[2]);
@@ -152,26 +147,26 @@ if(!allHops){
   var horizon = new Hops('Horizon', 12, 0, 3, 3, 7, 5, hopStatsArray[12], hopDescriptionArray[12], beerStylesArray[12]);
   var liberty = new Hops('Liberty', 4, 5, 3, 0, 7, 3, hopStatsArray[13], hopDescriptionArray[13], beerStylesArray[13]);
   var magnum = new Hops('Magnum', 13, 0, 3, 5, 5, 3, hopStatsArray[14], hopDescriptionArray[14], beerStylesArray[14]);
-
-  var millenium = new Hops('Millenium', 15, 0, 3, 3, 3, 7);
-  var mtHood = new Hops('Mt.Hood', 6, 0, 0, 3, 7, 5);
-  var nelsonSauvin = new Hops('Nelson Sauvin', 13, 3, 7, 0, 3, 7);
-  var northernBrewer = new Hops('Northern Brewer', 9, 0, 0, 7, 3, 3);
-  var nugget = new Hops('Nugget', 15, 0, 3, 0, 7, 7);
-  var perle = new Hops('Perle', 8, 0, 3, 0, 7, 5);
-  var saaz = new Hops('Saaz', 4, 0, 0, 3, 5, 5);
-  var simcoe = new Hops('Simcoe', 13, 7, 5, 5, 0, 0);
-  var sorachiAce = new Hops('Sorachi Ace', 14, 7, 5, 0, 0, 0);
-  var sterling = new Hops('Sterling', 8, 3, 0, 3, 7, 5);
-  var summit = new Hops('Summit', 18, 7, 0, 3, 7, 0);
-  var tettnang = new Hops('Tettnang', 4, 0, 0, 3, 7, 5);
-  var ultra = new Hops('Ultra', 3, 0, 3, 0, 5, 7);
-  var warrior = new Hops('Warrior', 16, 5, 0, 5, 0, 5);
-  var willamette = new Hops('Willamette', 5, 0, 3, 3, 5, 5);
+  var millenium = new Hops('Millenium', 15, 0, 3, 3, 3, 7, hopStatsArray[15], hopDescriptionArray[15], beerStylesArray[15]);
+  var mtHood = new Hops('Mt.Hood', 6, 0, 0, 3, 7, 5, hopStatsArray[16], hopDescriptionArray[16], beerStylesArray[16]);
+  var nelsonSauvin = new Hops('Nelson Sauvin', 13, 3, 7, 0, 3, 7, hopStatsArray[17], hopDescriptionArray[17], beerStylesArray[17]);
+  var northernBrewer = new Hops('Northern Brewer', 9, 0, 0, 7, 3, 3, hopStatsArray[18], hopDescriptionArray[18], beerStylesArray[18]);
+  var nugget = new Hops('Nugget', 15, 0, 3, 0, 7, 7, hopStatsArray[19], hopDescriptionArray[19], beerStylesArray[19]);
+  var perle = new Hops('Perle', 8, 0, 3, 0, 7, 5, hopStatsArray[20], hopDescriptionArray[20], beerStylesArray[20]);
+  var saaz = new Hops('Saaz', 4, 0, 0, 3, 5, 5, hopStatsArray[21], hopDescriptionArray[21], beerStylesArray[21]);
+  var simcoe = new Hops('Simcoe', 13, 7, 5, 5, 0, 0, hopStatsArray[22], hopDescriptionArray[22], beerStylesArray[22]);
+  var sorachiAce = new Hops('Sorachi Ace', 14, 7, 5, 0, 0, 0, hopStatsArray[23], hopDescriptionArray[23], beerStylesArray[23]);
+  var sterling = new Hops('Sterling', 8, 3, 0, 3, 7, 5, hopStatsArray[24], hopDescriptionArray[24], beerStylesArray[24]);
+  var summit = new Hops('Summit', 18, 7, 0, 3, 7, 0, hopStatsArray[25], hopDescriptionArray[25], beerStylesArray[25]);
+  var tettnang = new Hops('Tettnang', 4, 0, 0, 3, 7, 5, hopStatsArray[26], hopDescriptionArray[26], beerStylesArray[26]);
+  var ultra = new Hops('Ultra', 3, 0, 3, 0, 5, 7, hopStatsArray[27], hopDescriptionArray[27], beerStylesArray[27]);
+  var warrior = new Hops('Warrior', 16, 5, 0, 5, 0, 5, hopStatsArray[28], hopDescriptionArray[28], beerStylesArray[28]);
+  var willamette = new Hops('Willamette', 5, 0, 3, 3, 5, 5, hopStatsArray[29], hopDescriptionArray[29], beerStylesArray[29]);
   localStorage.setItem('allHops', JSON.stringify(allHops));
 }
-if (!allGrains){
-  allGrains=[];
+
+if (!allGrains) {
+  allGrains = [];
   var twoRow = new Grains('Two Row', 2, 36);
   var wheat = new Grains('Wheat', 2, 36);
   var vienna = new Grains('Vienna', 5, 36);
@@ -181,8 +176,9 @@ if (!allGrains){
   var chocolate = new Grains('Chocolate', 350, 27);
   localStorage.setItem('allGrains', JSON.stringify(allGrains));
 }
-if (!allYeasts){
-  allYeasts=[];
+
+if (!allYeasts) {
+  allYeasts = [];
   var us05 = new Yeasts('US-05 American', 0.75);
   var s04 = new Yeasts('S-04 British', 0.75);
   var s23 = new Yeasts('S-23 Lager', 0.75);
