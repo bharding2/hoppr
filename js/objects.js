@@ -174,6 +174,8 @@ if (!allGrains) {
   var biscuit = new Grains('Biscuit', 15, 35);
   var crystal80 = new Grains('Crystal 80', 80, 33);
   var chocolate = new Grains('Chocolate', 350, 27);
+  var blackPatent = new Grains('Black Patent', 450, 26);
+  var rye = new Grains('Rye', 3, 29);
   localStorage.setItem('allGrains', JSON.stringify(allGrains));
 }
 
