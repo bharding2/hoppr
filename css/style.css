@@ -157,8 +157,6 @@ h2 {
   display:inline;
 }
 .footer {
-  /*display: flex;*/
-  /*justify-content: center;*/
   background-color: #d7c7ad;
   width: 100%;
   clear: both;
@@ -176,14 +174,11 @@ h2 {
  }
  .links {
    display: flex;
- justify-content:space-around;
- float: right;
- margin-right: 39%;
-
-
+   justify-content:space-around;
+   float: right;
+   margin-right: 39%;
  }
  .copy {
    display: inline-block;
    font-size: 21px;
  }
- 

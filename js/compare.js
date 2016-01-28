@@ -1,21 +1,3 @@
-// function hopComp(alphaAcid, citrus, fruity, piney, spicey, floral) {
-//   this.alphaAcid = alphaAcid;
-//   this.citrus = citrus;
-//   this.fruity = fruity;
-//   this.piney = piney;
-//   this.spicey = spicey;
-//   this.floral = floral;
-//   // allHops.push(this);
-// }
-
-// var protohop = {
-//   alphaAcid: 16,
-//   citrus: 1,
-//   fruity: 4,
-//   piney: 7,
-//   spicey: 4,
-//   floral: 4,
-// }
 
 var percentArray = [];
 

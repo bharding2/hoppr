@@ -32,102 +32,102 @@ function Yeasts (yeastName, attenuation) {
 }
 
 var hopStatsArray = [
-  'Alpha Acid: 8 - 11% Beta Acid: 6 - 7% Co-Humulone: 21 - 24% Total Oil: 1.5 - 1.9 mL/100g',//Index 0
-  'Alpha Acid: 4.5 - 7% Beta Acid: 4.5 - 7% Co-Humulone: 33 - 40% Total Oil: 0.8 - 1.5 mL/100g',//Index 1
-  'Alpha Acid: 9.5 - 11.5% Beta Acid: 3.5 - 4.5% Co-Humulone: 28 -30% Total Oil: 1.5 - 2.5 mL/100g',//Index 2
-  'Alpha Acid: 12 - 14% Beta Acid: 3 - 4% Co-Humulone: 29 - 34% Total Oil: 1.5 - 2.5 mL/100g',//Index 3
-  'Alpha Acid: 11 - 13% Beta Acid: 3.5 - 4.5% Co-Humulone: 22 - 24% Total Oil: 2.2 - 2.8 mL/100g',//Index 4
-  'Alpha Acid: 14 - 16% Beta Acid: 4 - 5% Co-Humulone: 30 -35% Total Oil: 1.5 - 2.0 mL/100g',//Index 5
-  'Alpha Acid: 5.5 - 8.5% Beta Acid: 4.5 - 5.5% Co-Humulone: 36 - 42% Total Oil: 0.4 - 0.8 mL/100g',//Index 6
-  'Alpha Acid: 4 - 5.5% Beta Acid: 1.5 - 2% Co-Humulone: 25 - 32% Total Oil: 0.7 - 1.2 mL/100g',//Index 7
-  'Alpha Acid: 12 - 14% Beta Acid: 7 - 9% Co-Humulone: 37 - 42% Total Oil: 0.9 - 1.2 mL/100g',//Index 8
-  'Alpha Acid: ~5.5% Beta Acid: ~8.2% Co-Humulone: 11 - 13% Total Oil: 0.7 - 1.6 mL/100g',//Index 9
-  'Alpha Acid: 4 - 6% Beta Acid: 2 - 3% Co-Humulone: 20 -25% Total Oil: 0.4 - 1.0 mL/100g',//Index 10
-  'Alpha Acid: 3.5 - 5.5% Beta Acid: 3.5 - 5.5% Co-Humulone: 18 - 25% Total Oil: 0.6 - 1.5 mL/100g',//Index 11
-  'Alpha Acid: 11 - 13% Beta Acid: 6.5 - 8.5% Co-Humulone: 16 - 19% Total Oil: 1.5 - 2 mL/100g',//Index 12
-  'Alpha Acid: 3 - 5% Beta Acid: 3 - 4% Co-Humulone: 24 - 30% Total Oil: 0.6 - 1.8 mL/100g',//Index 13
-  'Alpha Acid: 10 - 14% Beta Acid: 4.5 - 7% Co-Humulone: 24 - 30% Total Oil: 1.9 - 3.0 mL/100g',//Index 14
-  'Alpha Acid: 14.5 - 16.5% Beta Acid: 4.3 - 5.3% Co-Humulone: 28 - 32% Total Oil: 1.2 - 2.2 mL/100g',//Index 15
-  'Alpha Acid: 4 - 8% Beta Acid: 5 - 7% Co-Humulone: 22 - 27% Total Oil: 1.6 - 3.4 mL/100g',//Index 16
-  'Alpha Acid: 12 - 13% Beta Acid: 6 - 8% Co-Humulone: ~24% Total Oil: ~1.1 mL/100g',//Index 17
-  'Alpha Acid: 8 - 10% Beta Acid: 3 - 5% Co-Humulone: 22 - 26% Total Oil: 1.5 - 2.0 mL/100g',//Index 18
-  'Alpha Acid: 12 - 14.5% Beta Acid: 4 - 6% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g',//Index 19
-  'Alpha Acid: 7 - 9.5% Beta Acid: 4 - 5% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g',//Index 20
-  'Alpha Acid: 3 - 4.5% Beta Acid: 3 - 4.5% Co-Humulone: 24 - 28% Total Oil: 0.5 - 1.0 mL/100g',//Index 21
-  'Alpha Acid: 12 - 14% Beta Acid: 4 - 5% Co-Humulone: 15 - 20% Total Oil: 2.0 - 2.5 mL/100g',//Index 22
-  'Alpha Acid: 10 - 16% Beta Acid: 6 - 7% Co-Humulone: ~23% Total Oil: 2.0 - 2.8 mL/100g',//Index 23
-  'Alpha Acid: 6 - 9% Beta Acid: 4 - 6% Co-Humulone: 22 - 28% Total Oil: 1.3 - 1.9 mL/100g',//Index 24
-  'Alpha Acid: 16 - 19% Beta Acid: 3.3 - 6% Co-Humulone: 26 - 33% Total Oil: 1.5 - 2.5 mL/100g',//Index 25
-  'Alpha Acid: 3 - 6% Beta Acid: 3 - 5% Co-Humulone: 22 - 29% Total Oil: 0.5 - 0.9 mL/100g',//Index 26
-  'Alpha Acid: 2 - 3.5% Beta Acid: 3 - 4.5% Co-Humulone: 23 - 38% Total Oil: 1.3 - 1.5 mL/100g',//Index 27
-  'Alpha Acid: 15 - 17% Beta Acid: 4.5 - 5.5% Co-Humulone: 24 - 26% Total Oil: 1.0 - 2.0 mL/100g',//Index 28
-  'Alpha Acid: 4 - 6% Beta Acid: 3 - 4.5% Co-Humulone: 30 - 35% Total Oil: 1 - 1.5 mL/100g'//Index 29
+  'Alpha Acid: 8 - 11% Beta Acid: 6 - 7% Co-Humulone: 21 - 24% Total Oil: 1.5 - 1.9 mL/100g',
+  'Alpha Acid: 4.5 - 7% Beta Acid: 4.5 - 7% Co-Humulone: 33 - 40% Total Oil: 0.8 - 1.5 mL/100g',
+  'Alpha Acid: 9.5 - 11.5% Beta Acid: 3.5 - 4.5% Co-Humulone: 28 -30% Total Oil: 1.5 - 2.5 mL/100g',
+  'Alpha Acid: 12 - 14% Beta Acid: 3 - 4% Co-Humulone: 29 - 34% Total Oil: 1.5 - 2.5 mL/100g',
+  'Alpha Acid: 11 - 13% Beta Acid: 3.5 - 4.5% Co-Humulone: 22 - 24% Total Oil: 2.2 - 2.8 mL/100g',
+  'Alpha Acid: 14 - 16% Beta Acid: 4 - 5% Co-Humulone: 30 -35% Total Oil: 1.5 - 2.0 mL/100g',
+  'Alpha Acid: 5.5 - 8.5% Beta Acid: 4.5 - 5.5% Co-Humulone: 36 - 42% Total Oil: 0.4 - 0.8 mL/100g',
+  'Alpha Acid: 4 - 5.5% Beta Acid: 1.5 - 2% Co-Humulone: 25 - 32% Total Oil: 0.7 - 1.2 mL/100g',
+  'Alpha Acid: 12 - 14% Beta Acid: 7 - 9% Co-Humulone: 37 - 42% Total Oil: 0.9 - 1.2 mL/100g',
+  'Alpha Acid: ~5.5% Beta Acid: ~8.2% Co-Humulone: 11 - 13% Total Oil: 0.7 - 1.6 mL/100g',
+  'Alpha Acid: 4 - 6% Beta Acid: 2 - 3% Co-Humulone: 20 -25% Total Oil: 0.4 - 1.0 mL/100g',
+  'Alpha Acid: 3.5 - 5.5% Beta Acid: 3.5 - 5.5% Co-Humulone: 18 - 25% Total Oil: 0.6 - 1.5 mL/100g',
+  'Alpha Acid: 11 - 13% Beta Acid: 6.5 - 8.5% Co-Humulone: 16 - 19% Total Oil: 1.5 - 2 mL/100g',
+  'Alpha Acid: 3 - 5% Beta Acid: 3 - 4% Co-Humulone: 24 - 30% Total Oil: 0.6 - 1.8 mL/100g',
+  'Alpha Acid: 10 - 14% Beta Acid: 4.5 - 7% Co-Humulone: 24 - 30% Total Oil: 1.9 - 3.0 mL/100g',
+  'Alpha Acid: 14.5 - 16.5% Beta Acid: 4.3 - 5.3% Co-Humulone: 28 - 32% Total Oil: 1.2 - 2.2 mL/100g',
+  'Alpha Acid: 4 - 8% Beta Acid: 5 - 7% Co-Humulone: 22 - 27% Total Oil: 1.6 - 3.4 mL/100g',
+  'Alpha Acid: 12 - 13% Beta Acid: 6 - 8% Co-Humulone: ~24% Total Oil: ~1.1 mL/100g',
+  'Alpha Acid: 8 - 10% Beta Acid: 3 - 5% Co-Humulone: 22 - 26% Total Oil: 1.5 - 2.0 mL/100g',
+  'Alpha Acid: 12 - 14.5% Beta Acid: 4 - 6% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g',
+  'Alpha Acid: 7 - 9.5% Beta Acid: 4 - 5% Co-Humulone: 27 - 32% Total Oil: 0.7 - 0.9 mL/100g',
+  'Alpha Acid: 3 - 4.5% Beta Acid: 3 - 4.5% Co-Humulone: 24 - 28% Total Oil: 0.5 - 1.0 mL/100g',
+  'Alpha Acid: 12 - 14% Beta Acid: 4 - 5% Co-Humulone: 15 - 20% Total Oil: 2.0 - 2.5 mL/100g',
+  'Alpha Acid: 10 - 16% Beta Acid: 6 - 7% Co-Humulone: ~23% Total Oil: 2.0 - 2.8 mL/100g',
+  'Alpha Acid: 6 - 9% Beta Acid: 4 - 6% Co-Humulone: 22 - 28% Total Oil: 1.3 - 1.9 mL/100g',
+  'Alpha Acid: 16 - 19% Beta Acid: 3.3 - 6% Co-Humulone: 26 - 33% Total Oil: 1.5 - 2.5 mL/100g',
+  'Alpha Acid: 3 - 6% Beta Acid: 3 - 5% Co-Humulone: 22 - 29% Total Oil: 0.5 - 0.9 mL/100g',
+  'Alpha Acid: 2 - 3.5% Beta Acid: 3 - 4.5% Co-Humulone: 23 - 38% Total Oil: 1.3 - 1.5 mL/100g',
+  'Alpha Acid: 15 - 17% Beta Acid: 4.5 - 5.5% Co-Humulone: 24 - 26% Total Oil: 1.0 - 2.0 mL/100g',
+  'Alpha Acid: 4 - 6% Beta Acid: 3 - 4.5% Co-Humulone: 30 - 35% Total Oil: 1 - 1.5 mL/100g'
 ];
 
 var hopDescriptionArray = [
-  'Floral, tropical and citrusy (lemon orange & grapefruit)',//Index 0
-  'Medium intense floral, citrus and grapefruit tones',//Index 1
-  'Medium intensity floral and citrus (lemon) tones',//Index 2
-  'Medium intensity Spice and Pine with subtle notes of grapefruit',//Index 3
-  'Strong citrus and tropical (grapefruit, passionfruit) tones',//Index 4
-  'Pungent, black pepper and licorice with subtle citrus overtone',//Index 5
-  'Strong floral and Spicy charecteristics',//Index 6
-  'Mild wood and fruit charecteristics',//Index 7
-  'Spicy, blackcurrant and citrus overtones',//Index 8
-  'Pleasant hoppy aroma',//Index 9
-  'Mild and delicate sweet floral aroma',//Index 10
-  'Mild yet spicy with herbal floral charecteristics',//Index 11
-  'Pleasant and spicy with floral charecteristics',//Index 12
-  'Mild and spicy with subtle lemon and citrus charecteristics',//Index 13
-  'No aroma',//Index 14
-  'Mild and resinous with floral and herbal tones',//Index 15
-  'Mild, herbal somewhat pungent or spicy',//Index 16
-  'White wine fruitiness with gooseberry and grape infused flavors',//Index 17
-  'Medium intensity, pine and mint characteristics',//Index 18
-  'Mild and pleasant with spicy, herbal tones',//Index 19
-  'Slightly spicy with herbal and floral characteristics',//Index 20
-  'Mild spice and earth tones',//Index 21
-  'Unique passionfruit, pine, earth and citrus characteristics',//Index 22
-  'Unique lemon and dill characteristics',//Index 23
-  'Herbal and spicy with a hint of floral and citrus characteristics',//Index 24
-  'Distinct spice, earthy, onion, garlic, and citrus tones',//Index 25
-  'Mild and pleasant with balanced earthy, herbal and floral impressions',//Index 26
-  'Mild and pleasant with spicy and floral tones',//Index 27
-  'Mild and resinous with subtle citrus, pine and herbal characteristics',//Index 28
-  'Mild and pleasant with slightly spicy and floral tones'//Index 29
+  'Floral, tropical and citrusy (lemon orange & grapefruit)',
+  'Medium intense floral, citrus and grapefruit tones',
+  'Medium intensity floral and citrus (lemon) tones',
+  'Medium intensity Spice and Pine with subtle notes of grapefruit',
+  'Strong citrus and tropical (grapefruit, passionfruit) tones',
+  'Pungent, black pepper and licorice with subtle citrus overtone',
+  'Strong floral and Spicy charecteristics',
+  'Mild wood and fruit charecteristics',
+  'Spicy, blackcurrant and citrus overtones',
+  'Pleasant hoppy aroma',
+  'Mild and delicate sweet floral aroma',
+  'Mild yet spicy with herbal floral charecteristics',
+  'Pleasant and spicy with floral charecteristics',
+  'Mild and spicy with subtle lemon and citrus charecteristics',
+  'No aroma',
+  'Mild and resinous with floral and herbal tones',
+  'Mild, herbal somewhat pungent or spicy',
+  'White wine fruitiness with gooseberry and grape infused flavors',
+  'Medium intensity, pine and mint characteristics',
+  'Mild and pleasant with spicy, herbal tones',
+  'Slightly spicy with herbal and floral characteristics',
+  'Mild spice and earth tones',
+  'Unique passionfruit, pine, earth and citrus characteristics',
+  'Unique lemon and dill characteristics',
+  'Herbal and spicy with a hint of floral and citrus characteristics',
+  'Distinct spice, earthy, onion, garlic, and citrus tones',
+  'Mild and pleasant with balanced earthy, herbal and floral impressions',
+  'Mild and pleasant with spicy and floral tones',
+  'Mild and resinous with subtle citrus, pine and herbal characteristics',
+  'Mild and pleasant with slightly spicy and floral tones'
 ];
 
 var beerStylesArray = [
-  'IPA',//Index 0
-  'American Pale Ale',//Index 1
-  'American Ale',//Index 2
-  'American Pale Ale',//Index 3
-  'IPA',//Index 4
-  'Pale Ale',//Index 5
-  'Stout',//Index 6
-  'English Ale',//Index 7
-  'English Ale',//Index 8
-  'American Pale Ale',//Index 9
-  'Bitter',//Index 10
-  'Belgian Ale',//Index 11
-  'American Ale',//Index 12
-  'Bock',//Index 13
-  'Lager',//Index 14
-  'Stout',// Index 15
-  'Light Lager, Bock, and Hefeweizen',//Index 16
-  'American-style Pale Ale, IPA',//Index 17
-  'IPA,  Abbey Ale, Pale Ale, Hefeweizen, Porter',//Index 18
-  'Barley Wine, Stout, Strong Bitter',//Index 19
-  'Hefeweizen, Lager, Pilsner, Stout',//Index 20
-  'Belgian-style Ales',//Index 21
-  'IPA, American Pale Ale',//Index 22
-  'American Pale Ale, IPA, Saison',//Index 23
-  'Belgian-style Ales',//Index 24
-  'IPA, American Pale Ale, Stout',//Index 25
-  'Belgian-style Ales',//Index 26
-  'Lager, Pilsner',//Index 27
-  'IPA, American Pale Ale',//Index 28
-  'English-style Ale'//Index 29
+  'IPA',
+  'American Pale Ale',
+  'American Ale',
+  'American Pale Ale',
+  'IPA',
+  'Pale Ale',
+  'Stout',
+  'English Ale',
+  'English Ale',
+  'American Pale Ale',
+  'Bitter',
+  'Belgian Ale',
+  'American Ale',
+  'Bock',
+  'Lager',
+  'Stout',
+  'Light Lager, Bock, and Hefeweizen',
+  'American-style Pale Ale, IPA',
+  'IPA,  Abbey Ale, Pale Ale, Hefeweizen, Porter',
+  'Barley Wine, Stout, Strong Bitter',
+  'Hefeweizen, Lager, Pilsner, Stout',
+  'Belgian-style Ales',
+  'IPA, American Pale Ale',
+  'American Pale Ale, IPA, Saison',
+  'Belgian-style Ales',
+  'IPA, American Pale Ale, Stout',
+  'Belgian-style Ales',
+  'Lager, Pilsner',
+  'IPA, American Pale Ale',
+  'English-style Ale'
 ];
 
 if (!allHops) {
