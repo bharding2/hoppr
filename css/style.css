@@ -167,7 +167,10 @@ h2 {
   clear: both;
   background: none;
  }
- .p {
-   margin: 15%;
+ .reference {
+   margin: 0% 0% 0% 3%;
+   color: #000105;
+ }
+ .reference {
 
  }
