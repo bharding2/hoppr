@@ -26,7 +26,7 @@ function Beer(beerName, beerClass, beerStyle, baseGrain, baseAmount, specGrain1,
   this.flavTime = 15;
   this.dryHop = dryHop;
   this.dryAmount = dryAmount;
-  this.yeast = yeast
+  this.yeast = yeast;
   this.batchSize = 5;
   this.mashEff = 0.75;
   this.colorSRM = this.calcSRM();
@@ -224,7 +224,7 @@ function getSecondHop(hopOne) {
 }
 
 function getBaseGrain(beerStyle) {
-  if (beerStyle === 'hefe') {
+  if (beerStyle === 'hefe' || beerStyle ==='weizenbock' || beerStyle === 'dunkelweizen') {
     return allGrains[1];
   } else {
     return allGrains[0];
@@ -259,11 +259,21 @@ function getSpecGrains(beerStyle) {
   } else if (beerStyle === 'hefe') {
     return [allGrains[2], 2, allGrains[4], 1];
   } else if (beerStyle === 'porter') {
-    return [allGrains[5], 2, allGrains[6], 1];
+    return [allGrains[4], 2, allGrains[7], 1];
   } else if (beerStyle === 'stout') {
     return [allGrains[3], 1, allGrains[6], 2];
-  } else {
+  } else if (beerStyle === 'belgian'){
     return [allGrains[4], 2, allGrains[2], 1];
+  } else if (beerStyle === 'rye') {
+    return [allGrains[8], 3, allGrains[3], 0];
+  } else if (beerStyle === 'blonde') {
+    return [allGrains[1], 2, allGrains[3], 1];
+  } else if (beerStyle === 'cda') {
+    return [allGrains[2], 2, allGrains[7], 1];
+  } else if (beerStyle === 'weizenbock') {
+    return [allGrains[5], 3, allGrains[3], 0];
+  } else {
+    return [allGrains[3], 2.25, allGrains[6], 0.75];
   }
 }
 
@@ -290,9 +300,9 @@ function getHopAdds (beerStyle, beerClass) {
     highHop = [4, 4, 2];
   }
 
-  if (beerStyle === 'ipa') {
+  if (beerStyle === 'ipa' || beerStyle === 'cda') {
     return highHop;
-  } else if (beerStyle === 'pilsner' || beerStyle === 'pale' || beerStyle === 'red' || beerStyle === 'porter') {
+  } else if (beerStyle === 'pilsner' || beerStyle === 'pale' || beerStyle === 'red' || beerStyle === 'porter' || beerStyle === 'rye') {
     return midHop;
   } else {
     return lowHop;
@@ -318,8 +328,18 @@ function getYeast(beerStyle) {
     return allYeasts[1];
   } else if (beerStyle === 'stout') {
     return allYeasts[1];
-  } else {
+  } else if (beerStyle === 'belgian') {
     return allYeasts[4];
+  } else if (beerStyle === 'rye') {
+    return allYeasts[1];
+  } else if (beerStyle === 'blonde') {
+    return allYeasts[0];
+  } else if (beerStyle === 'weizenbock') {
+    return allYeasts[3];
+  } else if (beerStyle === 'cda') {
+    return allYeasts[1];
+  } else {
+    return allYeasts[3];
   }
 }
 
