@@ -7,136 +7,120 @@
   <script src="js/objects.js"></script>
 </head>
   <body>
-  <div class="wrapper">
-      <div class="header"><h1>Hoppr: The Hop Matchmaker</h1></div>
-    <div class="navigation">
-      <a href="index.html"><button>Compare Hops</button></a>
-      <a href="descriptions.html"><button>Hop Descriptions</button></a>
-      <a href="recipe.html"><button>Recipes</button></a>
-      <a href="aboutus.html"><button>About Us</button></a>
-    </div>
-    <div class="container">
-      <div class="midBox">
-      <div class="leftcolumn">
-        <h3>Pick Your Hop</h3>
-        <div class="leftText">
-          <form id="compareHops">
-            <fieldset>
-              <legend>Find Replacment Hop</legend>
-              <p class="hopPro">Hop Choice</p>
-              <select name="hopChoice" id="addHopDrop">
-              </select>
-              <p class="hopPro">Hop Use</p>
-              <select name="hopUse" id="hopUse">
-                <option value="bittering">Bittering</option>
-                <option value="aroma">Aroma</option>
-                <option value="dryHop">Dry Hop</option>
-              </select>
-              <button id="hopButton" type="submit">Choose Hop</button>
-            </fieldset>
-          </form>
-          <form id="hopProfile">
-            <fieldset>
-              <legend>Search For Flavor Profile</legend>
-              <p class="hopPro">Citrus</p>
-              <select name="citrus" id="citrus">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-              <p class="hopPro">Floral</p>
-              <select name="floral" id="floral">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-              <p class="hopPro">Fruity</p>
-              <select name="fruity" id="fruity">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-              <p class="hopPro">Piney</p>
-              <select name="piney" id="piney">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-              <p class="hopPro">Spicy</p>
-              <select name="spicy" id="spicy">
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-                <option value="8">8</option>
-                <option value="9">9</option>
-              </select>
-              <button id="findProfile" type="submit">Find Profile</button>
-            </fieldset>
-          </form>
-        </div>
+    <header><h1>Hoppr: The Hop Matchmaker</h1></header>
+    <nav>
+      <a href="index.html">Compare Hops</a>
+      <a href="descriptions.html">Hop Descriptions</a>
+      <a href="recipe.html">Recipes</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
+    <section class="leftcolumn">
+      <h3>Pick Your Hop</h3>
+      <form id="compareHops">
+        <fieldset>
+          <legend>Find Replacment Hop</legend>
+          <p>Hop Choice</p>
+          <select name="hopChoice" id="addHopDrop">
+          </select>
+          <p>Hop Use</p>
+          <select name="hopUse" id="hopUse">
+            <option value="bittering">Bittering</option>
+            <option value="aroma">Aroma</option>
+            <option value="dryHop">Dry Hop</option>
+          </select>
+          <button id="hopButton" type="submit">Choose Hop</button>
+        </fieldset>
+      </form>
+      <form id="hopProfile">
+        <fieldset>
+          <legend>Search For Flavor Profile</legend>
+          <p>Citrus</p>
+          <select name="citrus" id="citrus">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <p>Floral</p>
+          <select name="floral" id="floral">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <p>Fruity</p>
+          <select name="fruity" id="fruity">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <p>Piney</p>
+          <select name="piney" id="piney">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <p>Spicy</p>
+          <select name="spicy" id="spicy">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <button id="findProfile" type="submit">Find Profile</button>
+        </fieldset>
+      </form>
+    </section>
+    <section class="rightcolumn">
+      <h2>Replacement Hops and Flavor Matches</h2>
+      <div id="compareContent">
+        <h3>It Starts Here...</h3>
+        <h4>9 billion replacement hop matches and counting!</h4>
+        <ul>
+          <li>Find a replacement hop to fill that void in your recipe, or search for a flavor profile that caters to your unique preferences.</li>
+          <li>Learn about your new favorite hop matches!  You can even add your own hop if our database can't meet your needs.</li>
+          <li>You've met your match!  You found the hop you have been searching for.  Use our recipe creator to build the beer of your dreams!</li>
+        </ul>
       </div>
-      <div class="rightcolumn">
-        <h2>Replacement Hops and Flavor Matches</h2>
-        <div class="rightText" id="compareContent">
-          <h3>It Starts Here...</h3>
-          <h4>9 billion replacement hop matches and counting!</h4>
-          <ul>
-            <li>Find a replacement hop to fill that void in your recipe, or search for a flavor profile that caters to your unique preferences.</li>
-            <li>Learn about your new favorite hop matches!  You can even add your own hop if our database can't meet your needs.</li>
-            <li>You've met your match!  You found the hop you have been searching for.  Use our recipe creator to build the beer of your dreams!</li>
-          </ul>
-        </div>
-      </div>
-        <div class="clear"> </div>
-      </div>
-      <div class="clear"> </div>
-    </div>
-    <div class="footer"> <p class ="copy" >Hoppr &copy; 2016</p>
-      <div class="links">
-      <p1 class = "reference">
-        <a href ="http://hopunion.com" class = "reference">hopunion.com</a>
-      </p1>
-      <p2 class= "reference">
-        <a href="http://www.brew365.com" class = "reference">brew365.com</a>
-        </p2>
-        <p3 class= "reference">
-          <a href="http://beerlegends.com" class = "reference">beerlegends.com</a>
-        </p3>
-      </div>
-  </div>
-  <script src="js/compare.js"></script>
+    </section>
+    <footer>
+      <p class="copy">Hoppr &copy; 2016</p>
+      <a href="http://hopunion.com" class="reference">hopunion.com</a>
+      <a href="http://www.brew365.com" class="reference">brew365.com</a>
+      <a href="http://beerlegends.com" class="reference">beerlegends.com</a>
+    </footer>
+    <script src="js/compare.js"></script>
   </body>
 </html>

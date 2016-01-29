@@ -1,29 +1,62 @@
+#recipeSection h4 {
+  font-weight: bolder;
+  font-size: 1.5vw;
+  line-height: 200%;
+  padding: 0 0 0 5%;
+}
+
+#recipeSection ul {
+  margin-right: 1.25vw;
+  padding: 0 0 0 5%;
+}
+
+#recipeSection li {
+  font-weight: bold;
+  font-size: 1.25vw;
+}
+
+#recipeSection p {
+  /*padding: 1%;*/
+  font-size: 1.25vw;
+  font-weight: bold;
+}
+
+#recipeSection h3 {
+  padding-top: 2%;
+  margin-bottom: 2%;
+}
+
+
 .recipe h4 {
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 1.5vw;
   line-height: 200%;
   padding: 0% 5% 0 5%;
 }
 
 .recipe ul {
-  margin-right: 15px;
+  margin-right: 1.25vw;
   padding: 2% 5% 5% 5%;
+  color: #000105;
 }
 
 .recipe li {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 1.25vw;
   padding: 1%;
   line-height: 150%;
+  color: #000105;
 }
 
 .recipe p {
   padding: 1% 1% 1% 5%;
-  font-size: 14px;
+  font-size: 1.25vw;
   font-weight: bold;
+  color: #000105;
 }
 
 .recipe h3 {
   padding-top: 2%;
   margin-bottom: 2%;
+  color: #000105;
 }
