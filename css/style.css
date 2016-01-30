@@ -160,3 +160,12 @@ h2 {
   color: #a6d35d;
   padding: .25% 4% .25% 1%;
 }
+
+button {
+ font-size: 1vw;
+ border-radius: 3px;
+ padding: 2px;
+ color: #a6d35d;
+ background-color: #333333;
+ border: 1px solid #000105;
+}
