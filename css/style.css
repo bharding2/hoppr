@@ -28,21 +28,16 @@ h1 {
 }
 
 header {
-  height: 8%;
   display: flex;
   align-items: center;
-  margin: 2% 0 0 0;
 }
 
 nav {
-  width: 90%;
-  height: 8%;
+  width: 86%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #d7c7ad;
   color: #333333;
-  margin: 1% 0 1% 0;
 }
 
 nav a {
@@ -52,7 +47,7 @@ nav a {
   justify-content: center;
   width: 20%;
   border-radius: 5px;
-  border: 1px solid #000105;
+  border: 1px solid #a6d35d;
   background-color: #3a3a3a;
   color: #f7ffea;
 }
@@ -69,24 +64,21 @@ nav a:hover {
 
 footer {
   width: 90%;
-  height: 8%;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #d7c7ad;
-  color: #333333;
-  margin: 1% 0 2% 0;
+  color: #f7ffea;
 }
 
 footer a {
-  color: #333333;
+  color: #f7ffea;
   font-size: 1.25vw;
 }
 
 footer a:hover {
   font-size: 1.25vw;
-  text-shadow: 2px 2px #a6d35d;
-  color: #000105;
+  text-shadow: 1px 1px #a6d35d;
+  color: #f7ffea;
 }
 
 .copy {
