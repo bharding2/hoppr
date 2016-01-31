@@ -35,6 +35,7 @@ header {
 
 nav {
   width: 86%;
+  margin: 0 0 0.5% 0;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -94,6 +95,7 @@ footer a:hover {
   align-self: stretch;
   background-color: #d7c7ad;
   opacity: .95;
+  font-size: 2vh;
   margin: 0 1% 0 0;
 }
 
@@ -146,13 +148,15 @@ legend {
 }
 
 select {
+  max-width: 90%;
   border: 1.5px solid #000105;
-  font-size: 1vw;
+  font-size: 1.5vh;
 }
 
 input {
+  max-width: 90%;
   border: 1.5px solid #000105;
-  font-size: 1.5vw;
+  font-size: 2vh;
 }
 
 h2 {
@@ -164,7 +168,7 @@ h2 {
 }
 
 button {
- font-size: 1vw;
+ font-size: 2vh;
  border-radius: 3px;
  padding: 2px;
  color: #a6d35d;
