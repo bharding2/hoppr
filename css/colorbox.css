@@ -1,14 +1,12 @@
 #colorBox {
   width: 15%;
+  height: 20%;
+  display: inline-block;
   margin-left: 5%;
   margin-bottom: 2%;
-  float:left;
-}
-#colorBox:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-  float:left;
+  position: absolute;
+  top: 65%;
+  left: 68%;
 }
 
 .light {
@@ -69,11 +67,4 @@
   border: 2px solid black;
   border-radius: 5px;
   background-image: url("../img/noise.png");
-}
-li {
-  margin-left: 25px;
-  color: black;
-}
-h4 {
-  color: #000105;
 }

@@ -7,9 +7,9 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  align-content: stetch;
-  font-family: Arial, Helvetica, sans-serif;
+  align-items: flex-start;;
+  align-content: stretch;
+  font-family: 'Electrolize', Arial, Helvetica, sans-serif;
   font-size: 1.25vw;
   background-color: #000105;
   background-image: url("../img/laurel.png");
@@ -30,6 +30,7 @@ h1 {
 header {
   display: flex;
   align-items: center;
+  margin: 5% 0 2% 0;
 }
 
 nav {
@@ -64,7 +65,9 @@ nav a:hover {
 
 footer {
   width: 90%;
+  height: 8%;
   display: flex;
+  align-self: flex-end;
   align-items: center;
   justify-content: space-around;
   color: #f7ffea;
@@ -118,7 +121,9 @@ h4 {
 }
 
 li {
+  margin: 0 0 0 5%;;
   color: #000105;
+  font-size: 1.25vw;
 }
 
 form {
@@ -145,6 +150,11 @@ select {
   font-size: 1vw;
 }
 
+input {
+  border: 1.5px solid #000105;
+  font-size: 1.5vw;
+}
+
 h2 {
   margin-top: .25%;
   display:inline-block;
@@ -160,4 +170,8 @@ button {
  color: #a6d35d;
  background-color: #333333;
  border: 1px solid #000105;
+}
+
+#descriptionContent, #compareContent, #recipeSection {
+  height: 60%;
 }
