@@ -140,6 +140,7 @@ fieldset {
   color: #0d0d0e;
   padding: 1%;
   font-weight: bold;
+  font-size: 2.5vh;
 }
 
 legend {
@@ -150,13 +151,13 @@ legend {
 select {
   max-width: 90%;
   border: 1.5px solid #000105;
-  font-size: 1.5vh;
+  font-size: 2vh;
 }
 
 input {
   max-width: 90%;
   border: 1.5px solid #000105;
-  font-size: 2vh;
+  font-size: 2.5vh;
 }
 
 h2 {
