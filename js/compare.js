@@ -3,7 +3,7 @@ var percentArray = [];
 
 function calcBitteringComp(compHop) {
   for (var i = 0; i < allHops.length; i++) {
-  var diffAlphaAcid = 4 * Math.abs(compHop.alphaAcid - allHops[i].alphaAcid); //36
+  var diffAlphaAcid = 4 * Math.abs(compHop.alphaAcid - allHops[i].alphaAcid);
   var diffCitrus = Math.abs(compHop.citrus - allHops[i].citrus);
   var diffFruity = Math.abs(compHop.fruity - allHops[i].fruity);
   var diffPiney = Math.abs(compHop.piney - allHops[i].piney);
@@ -18,7 +18,7 @@ function calcBitteringComp(compHop) {
 
 function calcAromaComp(compHop) {
   for (var i = 0; i < allHops.length; i++) {
-  var diffAlphaAcid = Math.abs(compHop.alphaAcid - allHops[i].alphaAcid); //18
+  var diffAlphaAcid = Math.abs(compHop.alphaAcid - allHops[i].alphaAcid);
   var diffCitrus = Math.abs(compHop.citrus - allHops[i].citrus);
   var diffFruity = Math.abs(compHop.fruity - allHops[i].fruity);
   var diffPiney = Math.abs(compHop.piney - allHops[i].piney);
@@ -33,7 +33,7 @@ function calcAromaComp(compHop) {
 
 function calcDryhopComp(compHop) {
   for (var i = 0; i < allHops.length; i++) {
-  var diffAlphaAcid = 0 * Math.abs(compHop.alphaAcid - allHops[i].alphaAcid); //0
+  var diffAlphaAcid = 0 * Math.abs(compHop.alphaAcid - allHops[i].alphaAcid);
   var diffCitrus = Math.abs(compHop.citrus - allHops[i].citrus);
   var diffFruity = Math.abs(compHop.fruity - allHops[i].fruity);
   var diffPiney = Math.abs(compHop.piney - allHops[i].piney);
@@ -46,12 +46,8 @@ function calcDryhopComp(compHop) {
   }
 }
 
-var addHopDrop = document.getElementById('addHopDrop');
 for(var i = 0; i < allHops.length; i++) {
-  var option = document.createElement('option');
-  option.innerHTML = allHops[i].hopName;
-  option.value = i;
-  addHopDrop.appendChild(option);
+  $('#addHopDrop').append('<option value="' + i + '">' + allHops[i].hopName + '</option>');
 };
 
 function handleHopComp(event) {
@@ -75,19 +71,11 @@ function handleHopComp(event) {
 
   percentArray.sort(function (a, b) {return b.percentAlike - a.percentAlike;});
 
-  var compareContent = document.getElementById('compareContent');
-
-  while(compareContent.firstChild) {
-    compareContent.removeChild(compareContent.firstChild);
-  }
-  var nameH3 = document.createElement('h3');
-  nameH3.textContent = compHop.hopName +' (' + compHop.alphaAcid + '% AA) Matches';
-  compareContent.appendChild(nameH3);
+  $('#compareContent').empty();
+  $('#compareContent').append('<h3>' + compHop.hopName + ' (' + compHop.alphaAcid + '% AA) Matches</h3>');
 
   for (var i = 1; i < 11; ++i) {
-    var pComp = document.createElement('p');
-    pComp.textContent = percentArray[i].hopName +' (' + percentArray[i].alphaAcid + '% AA): ' + percentArray[i].percentAlike + '%';
-    compareContent.appendChild(pComp);
+    $('#compareContent').append('<p>' + percentArray[i].hopName +' (' + percentArray[i].alphaAcid + '% AA): ' + percentArray[i].percentAlike + '%</p>');
   }
 }
 function handleHopProfile(event) {
@@ -106,19 +94,11 @@ function handleHopProfile(event) {
 
   percentArray.sort(function(a, b) {return b.percentAlike - a.percentAlike;});
 
-  var compareContent = document.getElementById('compareContent');
-
-  while(compareContent.firstChild) {
-    compareContent.removeChild(compareContent.firstChild);
-}
-  var profileH3 = document.createElement('h3');
-  profileH3.textContent = 'Your top ten flavor profile matches';
-  compareContent.appendChild(profileH3);
+  $('#compareContent').empty();
+  $('#compareContent').append('<h3>Your top ten flavor profile matches</h3>');
 
   for (var i = 0; i < 10; ++i) {
-    var pComp = document.createElement('p');
-    pComp.textContent = percentArray[i].hopName +' (' + percentArray[i].alphaAcid + '% AA): ' + percentArray[i].percentAlike + '%';
-    compareContent.appendChild(pComp);
+    $('#compareContent').append('<p>' + percentArray[i].hopName +' (' + percentArray[i].alphaAcid + '% AA): ' + percentArray[i].percentAlike + '%</p>');
   }
 
 }

@@ -80,7 +80,7 @@ Beer.prototype.renderRecipe = function(){
   h3El.textContent = this.beerName + ' ' + this.beerClass + ' ' + this.beerStyle;
   recipeSection.appendChild(h3El);
 
-  var grainHead = document.createElement('h4');
+  var grainHead = document.createElement('h5');
   grainHead.textContent = 'Grain Bill';
   recipeSection.appendChild(grainHead);
   var grainBill = document.createElement('ul');
@@ -101,7 +101,7 @@ Beer.prototype.renderRecipe = function(){
     grainBill.appendChild(listSpec2);
   }
 
-  var hopHead = document.createElement('h4');
+  var hopHead = document.createElement('h5');
   hopHead.textContent = 'Hop Additions';
   recipeSection.appendChild(hopHead);
   var hopAdds = document.createElement('ul');
@@ -125,7 +125,7 @@ Beer.prototype.renderRecipe = function(){
     hopAdds.appendChild(listDryHop);
   }
 
-  var yeastHead = document.createElement('h4');
+  var yeastHead = document.createElement('h5');
   yeastHead.textContent = 'Yeast';
   recipeSection.appendChild(yeastHead);
   var yeastUl = document.createElement('ul');
@@ -134,7 +134,7 @@ Beer.prototype.renderRecipe = function(){
   yeastAdd.textContent = this.yeast.yeastName;
   yeastUl.appendChild(yeastAdd);
 
-  var beerStats = document.createElement('h4');
+  var beerStats = document.createElement('h5');
   beerStats.textContent = 'Beer Stats';
   recipeSection.appendChild(beerStats);
   var statsList = document.createElement('ul');
@@ -155,8 +155,9 @@ Beer.prototype.renderRecipe = function(){
   statsSRM.textContent = 'SRM : ' + this.colorSRM.toFixed(0);
   statsList.appendChild(statsSRM);
 
-  var colorBox = document.getElementById('colorBox');
-  colorBox.removeAttribute('hidden');
+  var colorBox = document.createElement('div');
+  recipeSection.appendChild(colorBox);
+  colorBox.setAttribute('id', 'colorBox');
   if (this.colorSRM <= 5) {
     colorBox.setAttribute('class', 'light');
   } else if (this.colorSRM > 5 && this.colorSRM <= 10) {
@@ -176,32 +177,7 @@ Beer.prototype.renderRecipe = function(){
   } else {
     colorBox.setAttribute('class', 'darkblack');
   }
-
-  var beerImg = document.getElementById('beerImg');
-  beerImg.removeAttribute('hidden');
-  if (this.colorSRM <= 5) {
-    beerImg.setAttribute('class', 'lightBeer');
-  } else if (this.colorSRM > 5 && this.colorSRM <= 10) {
-    beerImg.setAttribute('class', 'paleBeer');
-  } else if (this.colorSRM > 10 && this.colorSRM <= 15) {
-    beerImg.setAttribute('class', 'amberBeer');
-  } else if (this.colorSRM > 15 && this.colorSRM <= 20) {
-    beerImg.setAttribute('class', 'redBeer');
-  } else if (this.colorSRM > 20 && this.colorSRM <= 25) {
-    beerImg.setAttribute('class', 'darkredBeer');
-  } else if (this.colorSRM > 25 && this.colorSRM <= 30) {
-    beerImg.setAttribute('class', 'brownBeer');
-  } else if (this.colorSRM > 30 && this.colorSRM <= 35) {
-    beerImg.setAttribute('class', 'darkbrownBeer');
-  } else if (this.colorSRM > 35 && this.colorSRM <= 40) {
-    beerImg.setAttribute('class', 'blackBeer');
-  } else {
-    beerImg.setAttribute('class', 'darkblackBeer');
-  }
 }
-
-
-
 
 function getSecondHop(hopOne) {
   var percentAlikeArray = [];

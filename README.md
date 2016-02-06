@@ -1,7 +1,9 @@
 ### README.md
+
 * Code Fellows 201-D5 Project Week
 * Start Date: January 25th (Layout Day)
 * End Date: January 29th (Presentation Day)
+* Maintained and updated by Ben Harding after that date
 
 Project Contributors:
 * Ben Harding - Leader / Coordinator (Came up with idea for project)
