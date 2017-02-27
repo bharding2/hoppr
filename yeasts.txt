@@ -1,5 +1,0 @@
-safale US-05  American  .75
-safale S-04   British   .75
-saflager S-23 Lager     .75
-safbrew WB-06 Wheat     .75
-safbrew BE-256 Belgian  .75
