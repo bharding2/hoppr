@@ -1,8 +1,0 @@
-2 Row       2L    36
-Wheat       2L    36
-vienna      5L    36
-munich      10L   35
-biscuit     15L   35
-honey       20L   34
-crystal 80  80L   33
-Chocolate   350L  27
