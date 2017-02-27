@@ -1,0 +1,196 @@
+.rightcolumn {
+  margin: 1.5% 5% 1.5% 1%;
+  color: #333333;
+  border-radius: 35px;
+  padding:0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url("../img/bbg1.jpg");
+  background-size: cover;
+  box-shadow: 0px 0px 10px 10px white;
+}
+.col-1-1 {
+  width: 45%;
+  height:45%;
+  border-radius: 10%;
+  float:left;
+  margin-left: 2.5%;
+  margin-top: 5px;
+}
+.col-2-1 {
+  width: 45%;
+  height:45%;
+  border-radius: 10%;
+  float:right;
+  margin-right: 2.5%;
+  margin-top: 5px;
+}
+.pic {
+  width: 65%;
+  height:100%;
+  float: left;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-top: -10px;
+  background-color: white;
+  animation: fadein 6s;
+}
+.info {
+  width: 30%;
+  height: 100%;
+  border-radius: 30px;
+  float: right;
+  background-color: rgba(8, 9, 8, 0.9);
+  animation: fadein 6s;
+}
+.infoBox {
+  margin-left: 6px;
+}
+#bottomRight {
+  background-image: url("../img/davez.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  float: left;
+  transition: background-image 1s;
+}
+#bottomRight:hover {
+  background-image: url("../img/calvinandhobbes.jpg");
+
+}
+#topRight {
+  float: right;
+  background-color: rgb(177, 175, 180);
+  background-image: url("../img/zach-burger.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 1s, transform 2s;
+}
+#topRight:hover {
+  background-image: url("../img/needbeer.jpg");
+  background-size: contain;
+  animation-duration: 2.5s;
+  animation-name: wobble;
+}
+@keyframes wobble {
+   0% { transform: translateX(0%); }
+   15% { transform: translateX(-25%) rotate(-5deg); }
+   30% { transform: translateX(20%) rotate(3deg); }
+   45% { transform: translateX(-15%) rotate(-3deg); }
+   60% { transform: translateX(10%) rotate(2deg); }
+   75% { transform: translateX(-5%) rotate(-1deg); }
+   100% { transform: translateX(0%);
+   }
+}
+#infoTopRight {
+  float: left;
+}
+#topLeft {
+  float: right;
+  background-image: url("../img/ben.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 1s, transform 2s;
+}
+#topLeft:hover {
+  background-image: url("../img/benrarr.jpg");
+  transform: scale(1.5);
+}
+#infoTopLeft {
+  float: left;
+}
+#bottomLeft {
+  float: left;
+  background-image: url("../img/ethan.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: background-image 3s, transform 3s;
+}
+#bottomLeft:hover {
+  background-image: url("../img/drunkawesome.jpg");
+  background-position: center;
+  background-size: contain;
+  transform: rotate(1080deg);
+}
+.infoBox {
+  color: white;
+  font-weight: bold;
+}
+li {
+  color:white;
+  margin-left: 15px;
+}
+.bottomRow {
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+.topRow {
+  margin-bottom: 10px;
+}
+h2 {
+  margin-left: 150px;
+}
+#ben {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#ethan {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#zach {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+#dave {
+  margin-top: 20px;
+}
+span {
+  font-size: 1.5em;
+}
+h4{
+  color: white;
+}
+h2 {
+  animation-duration: 2.5s;
+  animation-name: slidein;
+  animation-delay: .2s;
+  animation: fadein 2s;
+}
+h1 {
+  animation-duration: 2.5s;
+  animation-name: slidein2;
+  animation: fadein 2s;
+}
+
+#nava1 {
+  animation-duration: 1.5s;
+  animation-name: slide1;
+  animation: fadein 2s;
+}
+#nava2 {
+  animation-duration: 1.5s;
+  animation-name: slide2;
+    animation-delay: .2s;
+    animation: fadein 2s;
+}
+#nava3 {
+  animation-duration: 1.5s;
+  animation-name: slide3;
+    animation-delay: .4s;
+    animation: fadein 2s;
+}
+#nava4 {
+  animation-duration: 1.5s;
+  animation-name: slide4;
+    animation-delay: .6s;
+    animation: fadein 2s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

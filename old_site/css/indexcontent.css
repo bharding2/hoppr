@@ -1,0 +1,34 @@
+#compareContent h4 {
+  font-weight: bolder;
+  font-size: 3vh;
+  line-height: 200%;
+  padding: 0% 5% 0 5%;
+}
+
+#compareContent ul {
+  margin-right: 1.25vw;
+  padding: 2% 5% 5% 5%;
+  color: #000105;
+}
+
+#compareContent li {
+  font-weight: bold;
+  font-size: 2.5vh;
+  padding: 1%;
+  line-height: 150%;
+  color: #000105;
+}
+
+#compareContent p {
+  padding: 0.5% 0 0.5% 5%;
+  font-size: 1.25vw;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000105;
+}
+
+#compareContent h3 {
+  padding-top: 2%;
+  margin-bottom: 2%;
+  color: #000105;
+}
