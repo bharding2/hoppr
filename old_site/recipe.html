@@ -1,0 +1,79 @@
+<html>
+<head>
+  <title>Hoppr Project</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/recipecontent.css" />
+  <link rel="stylesheet" type="text/css" href="css/colorbox.css" />
+  <link rel="icon" type="image/png" href= "img/hopicon.png" />
+  <link href='https://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+  <script src="js/objects.js"></script>
+</head>
+  <body>
+    <header><h1>Hoppr: The Hop Matchmaker</h1></header>
+    <nav>
+      <a href="index.html">Compare Hops</a>
+      <a href="descriptions.html">Hop Descriptions</a>
+      <a href="recipe.html">Make Beer</a>
+      <a href="aboutus.html">About Us</a>
+    </nav>
+    <section class="leftcolumn">
+      <h3>Create a Beer</h3>
+      <form id="makeBeer">
+        <fieldset>
+          <legend>Get your recipe</legend>
+          <p>Beer Name</p>
+          <input name="beerName" type="text" size="15" placeholder="New Beer Name">
+          <p>Select Your Hop</p>
+          <select name="beerHop" id="beerHop">
+          </select>
+          <p>Beer Style</p>
+          <select name="beerStyle">
+            <option value="Pilsner">Pilsner</option>
+            <option value="Pale">Pale</option>
+            <option value="Amber">Amber</option>
+            <option value="Brown">Brown</option>
+            <option value="Red">Red</option>
+            <option value="IPA">IPA</option>
+            <option value="Hefe">Hefeweizen</option>
+            <option value="Porter">Porter</option>
+            <option value="Stout">Stout</option>
+            <option value="Belgian">Belgian</option>
+            <option value="Rye">Rye</option>
+            <option value="Blonde">Blonde</option>
+            <option value="Weizenbock">Weizenbock</option>
+            <option value="CDA">CDA</option>
+            <option value="Dunkelweizen">Dunkelweizen</option>
+          </select>
+          <p>Beer Class</p>
+          <select name="beerClass">
+            <option value="Session">Session</option>
+            <option value="Standard">Standard</option>
+            <option value="Imperial">Imperial</option>
+            <option value="Double">Double</option>
+          </select>
+          <button id="submitBeer" type="submit">Submit</button>
+        </fieldset>
+        <br /><br /><br /><br /><br />
+      </form>
+    </section>
+    <section class="rightcolumn">
+      <h2>Make Your Custom Recipe</h2>
+      <div id="recipeSection">
+        <h3>Find Your Future...</h3>
+        <h4 class="start">Create magic with your new hop match</h4>
+        <ul class="start">
+          <li class="start">Now that you have your perfect hop match, create a customized beer to match your preferences.</li>
+          <li class="start">The options are limitless! Use your new hop match to make your new favorite beer.</li>
+          <li class="start">We'll match your hop with another compatible hop to make your hop match shine.</li>
+        </ul>
+      </div>
+    </section>
+    <footer>
+      <p class="copy">Hoppr &copy; 2016</p>
+      <a href="http://hopunion.com" class="reference">hopunion.com</a>
+      <a href="http://www.brew365.com" class="reference">brew365.com</a>
+      <a href="http://beerlegends.com" class="reference">beerlegends.com</a>
+    </footer>
+  <script src="js/recipe.js"></script>
+  </body>
+</html>

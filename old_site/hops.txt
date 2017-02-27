@@ -1,0 +1,30 @@
+Amarillo    9 AA citrus 7, fruity 5, piney 1, spicy 1, floral 3
+Cascade     5 AA citrus 5, fruity 3, piney 3, spicy 3, floral 5
+Centennial  10 AA citrus 7, fruity 1, piney 3, spicy 1, floral 7
+Chinook     13 AA citrus 5, fruity 1, piney 7, spicy 5, floral 1
+Citra       12 AA citrus 7, fruity 7, piney 1, spicy 1, floral 3
+Columbus    15 AA citrus 5, fruity 1, piney 3, spicy 7, floral 1
+Cluster     7 AA citrus 1, fruity 1, piney 3, spicy 7, floral 7
+Fuggle      4 AA citrus 3, fruity 7, piney 3, spicy 1, floral 3
+Galena      13 AA citrus 5, fruity 5, piney 1, spicy 7, floral 1
+Glacier     6 AA citrus 5, fruity 1, piney 3, spicy 5, floral 3
+Golding     5 AA citrus 1, fruity 5, piney 1, spicy 3, floral 7
+Hallertau   4 AA citrus 1, fruity 3, piney 1, spicy 7, floral 5
+Horizon     12 AA citrus 1, fruity 3, piney 3, spicy 7, floral 5
+Liberty     4 AA citrus 5, fruity 3, piney 1, spicy 7, floral 3
+Magnum      13 AA citrus 1, fruity 3, piney 5, spicy 5, floral 3
+Millenium   15 AA citrus 1, fruity 3, piney 3, spicy 3, floral 7
+Mt. Hood    6 AA citrus 1, fruity 1, piney 3, spicy 7, floral 5
+Nelson Sauvin 13 AA citrus 3, fruity 7, piney 1, spicy 3, floral 7
+Northern Brewer 9 AA citrus 1, fruity 1, piney 7, spicy 3, floral 3
+Nugget      15 AA citrus 1, fruity 3, piney 1, spicy 7, floral 7
+Perle       8 AA citrus 1, fruity 3, piney 1, spicy 7, floral 5
+Saaz        4 AA citrus 1, fruity 1, piney 3, spicy 5, floral 5
+Simcoe      13 AA citrus 7, fruity 5, piney 5, spicy 1, floral 1
+Sorachi Ace 14 AA citrus 7, fruity 5, piney 1, spicy 1, floral 1
+Sterling    8 AA citrus 3, fruity 1, piney 3, spicy 7, floral 5
+Summit      18 AA citrus 7, fruity 1, piney 3, spicy 7, floral 1
+Tettnang    4 AA citrus 1, fruity 1, piney 3, spicy 7, floral 5
+Ultra       3 AA citrus 1, fruity 3, piney 1, spicy 5, floral 7
+Warrior     16 AA citrus 5, fruity 1, piney 5, spicy 1, floral 5
+Willamette  5 AA citrus 1, fruity 3, piney 3, spicy 5, floral 5
